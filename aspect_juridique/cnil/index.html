@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>CNIL - CTF Formatif - Learning</title>
+<meta name="description" content="">
+<meta name="generator" content="Hugo 0.80.0" />
+<link href="//index.xml" rel="alternate" type="application/rss+xml">
+<link rel="icon" type="image/png" href="images/logo.png" />
+<link rel="canonical" href="/aspect_juridique/cnil/">
+<link rel="stylesheet" href="/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:title" content="CNIL" />
+<meta property="og:description" content="La CNIL, c&rsquo;est quoi ? La Commission Nationale de l&rsquo;Informatique et des Libertés (CNIL) a été créée par la loi Informatique et Libertés du 6 janvier 1978.
+Elle est chargée de veiller à la protection des données personnelles contenues dans les fichiers et traitements informatiques ou papiers, aussi bien publics que privés.
+Ainsi, elle est chargée de veiller à ce que l&rsquo;informatique soit au service du citoyen et qu&rsquo;elle ne porte atteinte ni à l&rsquo;identité humaine, ni aux droits de l&rsquo;homme, ni à la vie privée, ni aux libertés individuelles ou publiques." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/aspect_juridique/cnil/" />
+<meta property="article:published_time" content="2020-02-02T15:14:53+00:00" />
+<meta property="article:modified_time" content="2020-02-02T15:14:53+00:00" /><meta property="og:site_name" content="CTF Formatif" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="CNIL"/>
+<meta name="twitter:description" content="La CNIL, c&rsquo;est quoi ? La Commission Nationale de l&rsquo;Informatique et des Libertés (CNIL) a été créée par la loi Informatique et Libertés du 6 janvier 1978.
+Elle est chargée de veiller à la protection des données personnelles contenues dans les fichiers et traitements informatiques ou papiers, aussi bien publics que privés.
+Ainsi, elle est chargée de veiller à ce que l&rsquo;informatique soit au service du citoyen et qu&rsquo;elle ne porte atteinte ni à l&rsquo;identité humaine, ni aux droits de l&rsquo;homme, ni à la vie privée, ni aux libertés individuelles ou publiques."/>
+<meta itemprop="name" content="CNIL">
+<meta itemprop="description" content="La CNIL, c&rsquo;est quoi ? La Commission Nationale de l&rsquo;Informatique et des Libertés (CNIL) a été créée par la loi Informatique et Libertés du 6 janvier 1978.
+Elle est chargée de veiller à la protection des données personnelles contenues dans les fichiers et traitements informatiques ou papiers, aussi bien publics que privés.
+Ainsi, elle est chargée de veiller à ce que l&rsquo;informatique soit au service du citoyen et qu&rsquo;elle ne porte atteinte ni à l&rsquo;identité humaine, ni aux droits de l&rsquo;homme, ni à la vie privée, ni aux libertés individuelles ou publiques.">
+<meta itemprop="datePublished" content="2020-02-02T15:14:53+00:00" />
+<meta itemprop="dateModified" content="2020-02-02T15:14:53+00:00" />
+<meta itemprop="wordCount" content="734">
+
+
+
+<meta itemprop="keywords" content="" />
+</head>
+<body><div class="container">
+
+<div style="display:flex;">
+<div style="flex: auto;"><header>
+<a style="text-decoration: none; color: white;"  href="/"><h1 style="font-size:40px">CTF Formatif - Learning</h1></a>
+
+ <span class="version">Version 1.2</span>
+
+</header>
+<div class="global-menu">
+<nav>
+<ul>
+<li><a href="">Climbers CTF</a></li></ul>
+</nav>
+</div>
+</div>
+
+<div style="background: black;">
+<img style="float:right; margin-right: 10px;" src="/images/logo-blanc.png" alt="Logo" width="100px">
+</div>
+</div>
+
+<div class="content-container">
+<main><h1>CNIL</h1>
+<h2 id="la-cnil-cest-quoi-">La CNIL, c&rsquo;est quoi ?</h2>
+<p>La <strong>Commission Nationale de l&rsquo;Informatique et des Libertés</strong> (CNIL) a été créée par la loi Informatique et Libertés du 6 janvier 1978.</p>
+<p>Elle est chargée de veiller à la <strong>protection des données personnelles</strong> contenues dans les fichiers et traitements informatiques ou papiers, aussi bien publics que privés.</p>
+<p>Ainsi, elle est chargée de veiller à ce que l&rsquo;informatique soit au service du citoyen et qu&rsquo;elle ne porte atteinte ni à l&rsquo;identité humaine, ni aux droits de l&rsquo;homme, ni à la vie privée, ni aux libertés individuelles ou publiques.</p>
+<p>La CNIL est une <strong>autorité administrative indépendante</strong> (AAI), c&rsquo;est-à-dire un organisme public qui agit au nom de l&rsquo;Etat, sans être placé sous l&rsquo;autorité du gouvernement ou d&rsquo;un ministre. Elle est composée de 18 membres élus ou nommés et s&rsquo;appuie sur des services.</p>
+<p>Elle a un rôle d&rsquo;alerte, de conseil et d&rsquo;information vers tous les publics mais dispose également d&rsquo;un pouvoir de contrôle et de sanction.</p>
+<h2 id="les-missions-de-la-cnil">Les missions de la CNIL</h2>
+<ol>
+<li><strong>Informer, protéger les droits</strong></li>
+</ol>
+<p><strong>Informer</strong><br>
+La CNIL est investie d’une mission générale d’information des personnes des droits et répond aux demandes des particuliers et des professionnels. Elle mène des actions de communication grand public que ce soit à travers la presse, son site Internet, sa présence sur les réseaux sociaux ou en mettant à disposition des outils pédagogiques.</p>
+<p><strong>Protéger</strong><br>
+La CNIL veille à ce que les citoyens accèdent efficacement aux données contenues dans les traitements les concernant. En cas de difficulté, il peu y avoir dépot de pleinte concernant :</p>
+<ul>
+<li><strong>la réputation</strong> en ligne (demandes de suppression de contenus sur internet),</li>
+<li><strong>le commerce</strong> (opposition à recevoir des courriels publicitaires),</li>
+<li><strong>les ressources humaines</strong> (vidéosurveillance, géolocalisation des véhicules),</li>
+<li><strong>la banque et le crédit</strong> (contestation de l’inscription dans l’un des fichiers de la banque de France).</li>
+</ul>
+<ol start="2">
+<li><strong>Accompagner la conformité / conseiller</strong></li>
+</ol>
+<p><strong>Accompagner</strong><br>
+A l’heure du RGPD, la conformité représente un indicateur de bonne gouvernance, répondant à l’enjeu de réputation, de confiance et un avantage concurrentiel pour les entreprises.</p>
+<p><strong>Conseiller</strong><br>
+L’activité de conseil et de réglementation de la CNIL est variée : avis sur des projets de texte d’origine gouvernementale concernant la protection des données personnelles ou créant de nouveaux fichiers, conseils, participation à des auditions parlementaires.</p>
+<ol start="3">
+<li><strong>Anticiper et innover</strong></li>
+</ol>
+<p>Dans le cadre de son activité d’innovation et de prospective, la CNIL s’intéresse aux signaux faibles et aux sujets émergents.</p>
+<p>Elle participe ainsi à la constitution d’un débat de société sur les enjeux éthiques des données. Elle constitue un point de contact et de dialogue avec les écosystèmes d’innovation du numérique (chercheurs, start-up, labs).</p>
+<p><strong>Le Comité de la prospective</strong><br>
+Afin de renforcer sa mission de veille et de réflexion prospective, la CNIL anime un comité d’experts extérieurs à la CNIL composé de 18 membres aux profils et horizons variés : sociologues, économistes, anthropologues, philosophes, entrepreneurs, chercheurs, auteurs, juristes, journalistes, etc.</p>
+<p><strong>Éthique et numérique</strong><br>
+La loi pour une République numérique du 7 octobre 2016 a confié à la CNIL la mission de conduire une réflexion sur les enjeux éthiques et les questions de société soulevés par l’évolution des technologies numériques.</p>
+<ol start="4">
+<li><strong>Contrôler et sanctionner</strong></li>
+</ol>
+<p>La CNIL peut contrôler les organismes. En cas de manquements constatés, elle peut décider de les mettre en demeure ou de les sanctionner.</p>
+<p><strong>Le contrôle</strong><br>
+Le contrôle a posteriori constitue un moyen privilégié d’intervention auprès des responsables de traitement de données personnelles. Il permet à la CNIL de vérifier sur place la mise en œuvre concrète de la loi.</p>
+<p><strong>L’avertissement</strong><br>
+L’avertissement est une nouvelle « mesure correctrice » prévue par le RGPD, introduite en droit français par la loi du 20 juin 2018 : la présidente de la CNIL peut avertir un organisme que le traitement de données qu’il envisage, à un stade où celui-ci n’est pas encore opérationnel, est susceptible de méconnaître les textes applicables.</p>
+<p><strong>Les mises en demeure</strong><br>
+La Présidente de la CNIL a la possibilité de <strong>mettre en demeure des organismes qui ne respectent pas des dispositions du RGPD ou de la loi</strong> de se mettre en conformité dans un délai imparti.</p>
+<p><strong>La procédure de sanction de la CNIL</strong><br>
+A l&rsquo;issue de contrôle ou de plaintes, en cas de méconnaissance des dispositions du RGPD ou de la loi de la part des responsables de traitement et des sous-traitants, la formation restreinte de la CNIL peut prononcer des sanctions à l&rsquo;égard des responsables de traitements qui ne respecteraient pas ces textes.</p>
+<hr>
+<p>Pour plus d&rsquo;information, rendez-vous sur le site de la <a href="https://www.cnil.fr/fr/les-missions-de-la-cnil" title="Les missions de la CNIL">CNIL ici</a>.</p>
+<div class="edit-meta"><br></div><nav class="pagination"><a class="nav nav-prev" href="/aspect_juridique/" title="Aspect Juridique"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Aspect Juridique</a>
+<a class="nav nav-next" href="/aspect_juridique/asp_jur/" title="Cybersécurité - Jurdique">Next - Cybersécurité - Jurdique <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Modified and adapted here by <a href="https://github.com/ElBucheron/Projet-CTF-Formatif"><b>Ugo</b></a>.</p>
+</footer>
+</main><div class="sidebar">
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script type="text/javascript">
+
+
+var idx, searchInput, searchResults = null
+var documents = []
+
+function renderSearchResults(results){
+
+    if (results.length > 0) {
+
+        
+        if (results.length > 9){
+            results = results.slice(0,10)
+        }
+
+        
+        searchResults.innerHTML = ''
+
+        
+        results.forEach(result => {
+        
+            
+            var article = document.createElement('div')
+            article.innerHTML = `
+            <a href="${result.ref}"><em style="color: blue;">${documents[result.ref].title}</em></a>
+            `
+            searchResults.appendChild(article)
+        })
+
+    
+    } else {
+        searchResults.innerHTML = '<p>No results found.</p>'
+    }
+}
+
+function registerSearchHandler() {
+
+    
+    searchInput.oninput = function(event) {
+
+        
+        if (searchInput.value == '') {
+            
+            searchResults.innerHTML = ''
+        } else {
+            
+            
+            var query = event.target.value
+
+            
+            var results = idx.search(query + '*')
+
+            
+            renderSearchResults(results)
+        }
+    }
+
+    
+    searchInput.focus()
+    searchInput.placeholder = ''
+}
+
+window.onload = function() {
+
+    
+    searchInput = document.getElementById('search-input')
+    searchResults = document.getElementById('search-results')
+
+    
+    fetch('/index.json', {
+        method: 'get'
+    }).then(
+        res => res.json()
+    ).then(
+        res => {
+
+            
+            idx = lunr(function() {
+                this.ref('url')
+                this.field('title')
+                this.field('content')
+
+                res.forEach(function(doc) {
+                    this.add(doc)
+                    documents[doc.url] = {
+                        'title': doc.title,
+                        'content': doc.content,
+                    }
+                }, this)
+            })
+
+            
+            registerSearchHandler()
+        }
+    ).catch(
+        err => {
+            searchResults.innerHTML = `<p>${err}</p>`
+        }
+    )
+}
+</script>
+<input style="margin: 5px;"  id="search-input" type="search" size="47%"  placeholder="Loading..." name="search" value="Rechercher" onclick="this.value=''">
+
+<section style="border-bottom: 2px solid gray;" id="search-results" class="search"></section>
+
+
+
+<nav class="slide-menu">
+<ul>
+<li class=""><a href="/">Home</a></li>
+
+<li class=" has-sub-menu"><a href="/system/">System<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="/system/files/">Files</a></li>
+<li class=""><a href="/system/registres/">Registre</a></li>
+<li class=""><a href="/system/hash/">Hash</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="/reseau/">Reseau<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="/reseau/ip_address/">Adresses IP</a></li>
+<li class=""><a href="/reseau/wireshark/">Wireshark</a></li>
+</ul>
+  
+</li>
+
+<li class="parent has-sub-menu"><a href="/aspect_juridique/">Aspect Juridique<span class="mark opened">-</span></a>
+  
+<ul class="sub-menu">
+<li class="active"><a href="/aspect_juridique/cnil/">CNIL</a></li>
+<li class=""><a href="/aspect_juridique/asp_jur/">Cybersécurité - Jurdique</a></li>
+<li class=""><a href="/aspect_juridique/rgpd/">RGPD</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="/web/">Web<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="/web/html_php/">HTML/CSS - PHP</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="/stegano/">Steganographie</a>
+  
+</li>
+</ul>
+</nav>
+
+
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aspect Juridique on CTF Formatif - Learning</title>
+    <link>/aspect_juridique/</link>
+    <description>Recent content in Aspect Juridique on CTF Formatif - Learning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Tue, 17 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="/aspect_juridique/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CNIL</title>
+      <link>/aspect_juridique/cnil/</link>
+      <pubDate>Sun, 02 Feb 2020 15:14:53 +0000</pubDate>
+      
+      <guid>/aspect_juridique/cnil/</guid>
+      <description>La CNIL, c&amp;rsquo;est quoi ? La Commission Nationale de l&amp;rsquo;Informatique et des Libertés (CNIL) a été créée par la loi Informatique et Libertés du 6 janvier 1978.
+Elle est chargée de veiller à la protection des données personnelles contenues dans les fichiers et traitements informatiques ou papiers, aussi bien publics que privés.
+Ainsi, elle est chargée de veiller à ce que l&amp;rsquo;informatique soit au service du citoyen et qu&amp;rsquo;elle ne porte atteinte ni à l&amp;rsquo;identité humaine, ni aux droits de l&amp;rsquo;homme, ni à la vie privée, ni aux libertés individuelles ou publiques.</description>
+    </item>
+    
+    <item>
+      <title>Cybersécurité - Jurdique</title>
+      <link>/aspect_juridique/asp_jur/</link>
+      <pubDate>Sun, 02 Feb 2020 15:14:53 +0000</pubDate>
+      
+      <guid>/aspect_juridique/asp_jur/</guid>
+      <description>Sécurité du SI Risques engageant la responsabilité du gérant du SI Responsabilité pénale Il y a obligation, de la part du gérant, de mettre en œuvre des mesures techniques et d’organisation pour protéger les données personnelles qui sont collectées dans le cadre de son activité. Contre potentiellement l&amp;rsquo;altération, leur destruction, la diffusion ou le non-acces desdites données.
+  Article 34 – Loi informatique et Libertés Modifié par Loi n°2004-801 du 06 août 2004 « Le responsable du traitement est tenu de prendre toutes précautions utiles, au regard de la nature des données et des risques présentés par le traitement, pour préserver la sécurité des données et, notamment, empêcher qu&amp;rsquo;elles soient déformées, endommagées, ou que des tiers non autorisés y aient accès.</description>
+    </item>
+    
+    <item>
+      <title>RGPD</title>
+      <link>/aspect_juridique/rgpd/</link>
+      <pubDate>Sun, 02 Feb 2020 15:14:53 +0000</pubDate>
+      
+      <guid>/aspect_juridique/rgpd/</guid>
+      <description>Trois principes fondamentaux :
+ Responsabilité, Transparence &amp;amp; Confiance
+ Donnée personnelle La notion de « données personnelles » est à comprendre de façon très large. Une « donnée personnelle » est « toute information se rapportant à une personne physique identifiée ou identifiable ».
+Une personne peut être identifiée :
+ directement (ex: nom, prénom) ou indirectement (ex : identifiant (n° client), un numéro (de téléphone), une donnée biométrique, plusieurs éléments spécifiques propres à son identité physique, physiologique, génétique, psychique, économique, culturelle ou sociale, mais aussi la voix ou l’image).</description>
+    </item>
+    
+  </channel>
+</rss>

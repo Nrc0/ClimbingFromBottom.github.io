@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on CTF Formatif - Learning</title>
+    <link>/web/</link>
+    <description>Recent content in Web on CTF Formatif - Learning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Tue, 17 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTML/CSS - PHP</title>
+      <link>/web/html_php/</link>
+      <pubDate>Sun, 02 Feb 2020 15:14:53 +0000</pubDate>
+      
+      <guid>/web/html_php/</guid>
+      <description>Table of contents   HTML &amp;amp; CSS
+1.1 Balises &amp;amp; Attributs
+_ Balises
+_ Attributs
+1.2 Balises fréquentes
+  PHP
+2.1 Structure du PHP
+2.2 Formulaires
+2.3 Methode : GET vs POST
+3. JavaScript
+  Références
+   HTML &amp;amp; CSS  HTML
+HyperText Markup Language a fait son apparition dès 1991 lors du lancement du Web. Son rôle est de gérer et organiser le contenu.</description>
+    </item>
+    
+  </channel>
+</rss>

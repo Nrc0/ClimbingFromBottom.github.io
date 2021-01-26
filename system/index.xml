@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>System on CTF Formatif - Learning</title>
+    <link>/system/</link>
+    <description>Recent content in System on CTF Formatif - Learning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Tue, 17 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="/system/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Files</title>
+      <link>/system/files/</link>
+      <pubDate>Sun, 22 Mar 2020 13:58:15 +0000</pubDate>
+      
+      <guid>/system/files/</guid>
+      <description>Identification L&amp;rsquo;identification se fait premièrement par la lecture de l&amp;rsquo;extension du fichier qui se trouve juste derrière le nom du fichier (Attention sous windows, par défaut les extensions de fichier sont caché), on peut trouver par exemple &amp;ldquo;.png&amp;rdquo; ou &amp;ldquo;.jpg&amp;rdquo; pour une image. Cette identification permet à l&amp;rsquo;OS d&amp;rsquo;executer l&amp;rsquo;outil par défaut relié et configuré pour cette extension.
+La signature d&amp;rsquo;un fichier, une séquence unique de bits présent dans l&amp;rsquo;entête d&amp;rsquo;un fichier.</description>
+    </item>
+    
+    <item>
+      <title>Registre</title>
+      <link>/system/registres/</link>
+      <pubDate>Wed, 26 Feb 2020 13:58:15 +0000</pubDate>
+      
+      <guid>/system/registres/</guid>
+      <description>La base de registre est un élément fondamental du système. C&amp;rsquo;est une gigantesque base de données qui peut atteindre plusieurs dizaines de méga. Afin de faciliter la gestion de cette base, celle ci est organisée en 5 clés principales, elles mêmes divisées en sous clés.
+Les 5 clés et leurs fonctions HKEY_CLASS_ROOT : Cette clé gère les extensions des fichiers ainsi que les liaisons avec les logiciels et serveurs ActiveX. Toutes les extensions des fichiers et leur programme correspondant sont gérés ici.</description>
+    </item>
+    
+    <item>
+      <title>Hash</title>
+      <link>/system/hash/</link>
+      <pubDate>Sun, 02 Feb 2020 15:14:53 +0000</pubDate>
+      
+      <guid>/system/hash/</guid>
+      <description>La somme de contrôle (Hash) La version basique d’un tel mécanisme est appelée “somme de contrôle”.
+Le but d’une somme de contrôle est en quelque sorte d’être “l’empreinte” d’une donnée (attention, cette “empreinte” n’est pas une signature et ne garantit pas pour autant l’identité). Un exemple très simplifié serait de compter le nombre de lettres dans un message et de rajouter ce nombre à la fin dudit message. De cette manière, un destinataire peut immédiatement vérifier que le message n’a pas été coupé par erreur.</description>
+    </item>
+    
+  </channel>
+</rss>

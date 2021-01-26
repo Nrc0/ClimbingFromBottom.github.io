@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Aspect Juridique - CTF Formatif - Learning</title>
+<meta name="description" content="">
+<meta name="generator" content="Hugo 0.80.0" />
+<link href="//index.xml" rel="alternate" type="application/rss+xml">
+<link rel="icon" type="image/png" href="images/logo.png" />
+<link rel="canonical" href="/aspect_juridique/">
+<link rel="stylesheet" href="/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:title" content="Aspect Juridique" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/aspect_juridique/" />
+<meta property="og:updated_time" content="2017-10-17T15:26:15+00:00" /><meta property="og:site_name" content="CTF Formatif" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Aspect Juridique"/>
+<meta name="twitter:description" content=""/>
+<meta itemprop="name" content="Aspect Juridique">
+<meta itemprop="description" content="">
+</head>
+<body><div class="container">
+
+<div style="display:flex;">
+<div style="flex: auto;"><header>
+<a style="text-decoration: none; color: white;"  href="/"><h1 style="font-size:40px">CTF Formatif - Learning</h1></a>
+
+ <span class="version">Version 1.2</span>
+
+</header>
+<div class="global-menu">
+<nav>
+<ul>
+<li><a href="">Climbers CTF</a></li></ul>
+</nav>
+</div>
+</div>
+
+<div style="background: black;">
+<img style="float:right; margin-right: 10px;" src="/images/logo-blanc.png" alt="Logo" width="100px">
+</div>
+</div>
+
+<div class="content-container">
+<main><h1>Aspect Juridique</h1><ul>
+<p><span><card>
+<h2><a href="/aspect_juridique/cnil/" >CNIL</a></h2></card>
+<em style="margin-left: 3em;">La CNIL, c’est quoi ? La Commission Nationale de l’Informatique et des Libertés (CNIL) a été créée par la loi Informatique et Libertés du 6 janvier 1978.
+Elle est chargée de veiller à la protection des données personnelles contenues dans les fichiers et traitements informatiques ou papiers, aussi bien publics que privés.
+Ainsi, elle est chargée de veiller à ce que l’informatique soit au service du citoyen et qu’elle ne porte atteinte ni à l’identité humaine, ni aux droits de l’homme, ni à la vie privée, ni aux libertés individuelles ou publiques.</em>
+</span></p>
+<p><span><card>
+<h2><a href="/aspect_juridique/asp_jur/" >Cybersécurité - Jurdique</a></h2></card>
+<em style="margin-left: 3em;">Sécurité du SI Risques engageant la responsabilité du gérant du SI Responsabilité pénale Il y a obligation, de la part du gérant, de mettre en œuvre des mesures techniques et d’organisation pour protéger les données personnelles qui sont collectées dans le cadre de son activité. Contre potentiellement l’altération, leur destruction, la diffusion ou le non-acces desdites données.
+Article 34 – Loi informatique et Libertés Modifié par Loi n°2004-801 du 06 août 2004 « Le responsable du traitement est tenu de prendre toutes précautions utiles, au regard de la nature des données et des risques présentés par le traitement, pour préserver la sécurité des données et, notamment, empêcher qu’elles soient déformées, endommagées, ou que des tiers non autorisés y aient accès.</em>
+</span></p>
+<p><span><card>
+<h2><a href="/aspect_juridique/rgpd/" >RGPD</a></h2></card>
+<em style="margin-left: 3em;">Trois principes fondamentaux :
+Responsabilité, Transparence &amp; Confiance
+Donnée personnelle La notion de « données personnelles » est à comprendre de façon très large. Une « donnée personnelle » est « toute information se rapportant à une personne physique identifiée ou identifiable ».
+Une personne peut être identifiée :
+directement (ex: nom, prénom) ou indirectement (ex : identifiant (n° client), un numéro (de téléphone), une donnée biométrique, plusieurs éléments spécifiques propres à son identité physique, physiologique, génétique, psychique, économique, culturelle ou sociale, mais aussi la voix ou l’image).</em>
+</span></p>
+</ul>
+<div class="edit-meta"><br></div><nav class="pagination"><a class="nav nav-prev" href="/reseau/wireshark/" title="Wireshark"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Wireshark</a>
+<a class="nav nav-next" href="/aspect_juridique/cnil/" title="CNIL">Next - CNIL <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Modified and adapted here by <a href="https://github.com/ElBucheron/Projet-CTF-Formatif"><b>Ugo</b></a>.</p>
+</footer>
+</main><div class="sidebar">
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script type="text/javascript">
+
+
+var idx, searchInput, searchResults = null
+var documents = []
+
+function renderSearchResults(results){
+
+    if (results.length > 0) {
+
+        
+        if (results.length > 9){
+            results = results.slice(0,10)
+        }
+
+        
+        searchResults.innerHTML = ''
+
+        
+        results.forEach(result => {
+        
+            
+            var article = document.createElement('div')
+            article.innerHTML = `
+            <a href="${result.ref}"><em style="color: blue;">${documents[result.ref].title}</em></a>
+            `
+            searchResults.appendChild(article)
+        })
+
+    
+    } else {
+        searchResults.innerHTML = '<p>No results found.</p>'
+    }
+}
+
+function registerSearchHandler() {
+
+    
+    searchInput.oninput = function(event) {
+
+        
+        if (searchInput.value == '') {
+            
+            searchResults.innerHTML = ''
+        } else {
+            
+            
+            var query = event.target.value
+
+            
+            var results = idx.search(query + '*')
+
+            
+            renderSearchResults(results)
+        }
+    }
+
+    
+    searchInput.focus()
+    searchInput.placeholder = ''
+}
+
+window.onload = function() {
+
+    
+    searchInput = document.getElementById('search-input')
+    searchResults = document.getElementById('search-results')
+
+    
+    fetch('/index.json', {
+        method: 'get'
+    }).then(
+        res => res.json()
+    ).then(
+        res => {
+
+            
+            idx = lunr(function() {
+                this.ref('url')
+                this.field('title')
+                this.field('content')
+
+                res.forEach(function(doc) {
+                    this.add(doc)
+                    documents[doc.url] = {
+                        'title': doc.title,
+                        'content': doc.content,
+                    }
+                }, this)
+            })
+
+            
+            registerSearchHandler()
+        }
+    ).catch(
+        err => {
+            searchResults.innerHTML = `<p>${err}</p>`
+        }
+    )
+}
+</script>
+<input style="margin: 5px;"  id="search-input" type="search" size="47%"  placeholder="Loading..." name="search" value="Rechercher" onclick="this.value=''">
+
+<section style="border-bottom: 2px solid gray;" id="search-results" class="search"></section>
+
+
+
+<nav class="slide-menu">
+<ul>
+<li class=""><a href="/">Home</a></li>
+
+<li class=" has-sub-menu"><a href="/system/">System<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="/system/files/">Files</a></li>
+<li class=""><a href="/system/registres/">Registre</a></li>
+<li class=""><a href="/system/hash/">Hash</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="/reseau/">Reseau<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="/reseau/ip_address/">Adresses IP</a></li>
+<li class=""><a href="/reseau/wireshark/">Wireshark</a></li>
+</ul>
+  
+</li>
+
+<li class="parent active has-sub-menu"><a href="/aspect_juridique/">Aspect Juridique<span class="mark opened">-</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="/aspect_juridique/cnil/">CNIL</a></li>
+<li class=""><a href="/aspect_juridique/asp_jur/">Cybersécurité - Jurdique</a></li>
+<li class=""><a href="/aspect_juridique/rgpd/">RGPD</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="/web/">Web<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="/web/html_php/">HTML/CSS - PHP</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="/stegano/">Steganographie</a>
+  
+</li>
+</ul>
+</nav>
+
+
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Adresses IP - CTF Formatif - Learning</title>
+<meta name="description" content="">
+<meta name="generator" content="Hugo 0.80.0" />
+<link href="//index.xml" rel="alternate" type="application/rss+xml">
+<link rel="icon" type="image/png" href="images/logo.png" />
+<link rel="canonical" href="/reseau/ip_address/">
+<link rel="stylesheet" href="/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:title" content="Adresses IP" />
+<meta property="og:description" content="Description Une Adresse IP (Internet Protocol) est un numéro d&#39;identification qui est attribué de façon permanente ou provisoire à chaque périphérique relié à un réseau informatique qui utilise l&#39;Internet Protocol. Cette adresse est assignée soit individuellement par l&#39;administrateur du réseau local dans le sous-réseau correspondant, soit automatiquement via le protocole DHCP[1]. Si l&#39;ordinateur dispose de plusieurs interfaces, chacune dispose d&#39;une adresse IP spécifique. Une interface peut également disposer de plusieurs adresses IP." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/reseau/ip_address/" />
+<meta property="article:published_time" content="2020-02-02T15:14:53+00:00" />
+<meta property="article:modified_time" content="2020-02-02T15:14:53+00:00" /><meta property="og:site_name" content="CTF Formatif" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Adresses IP"/>
+<meta name="twitter:description" content="Description Une Adresse IP (Internet Protocol) est un numéro d&#39;identification qui est attribué de façon permanente ou provisoire à chaque périphérique relié à un réseau informatique qui utilise l&#39;Internet Protocol. Cette adresse est assignée soit individuellement par l&#39;administrateur du réseau local dans le sous-réseau correspondant, soit automatiquement via le protocole DHCP[1]. Si l&#39;ordinateur dispose de plusieurs interfaces, chacune dispose d&#39;une adresse IP spécifique. Une interface peut également disposer de plusieurs adresses IP."/>
+<meta itemprop="name" content="Adresses IP">
+<meta itemprop="description" content="Description Une Adresse IP (Internet Protocol) est un numéro d&#39;identification qui est attribué de façon permanente ou provisoire à chaque périphérique relié à un réseau informatique qui utilise l&#39;Internet Protocol. Cette adresse est assignée soit individuellement par l&#39;administrateur du réseau local dans le sous-réseau correspondant, soit automatiquement via le protocole DHCP[1]. Si l&#39;ordinateur dispose de plusieurs interfaces, chacune dispose d&#39;une adresse IP spécifique. Une interface peut également disposer de plusieurs adresses IP.">
+<meta itemprop="datePublished" content="2020-02-02T15:14:53+00:00" />
+<meta itemprop="dateModified" content="2020-02-02T15:14:53+00:00" />
+<meta itemprop="wordCount" content="1203">
+
+
+
+<meta itemprop="keywords" content="" />
+</head>
+<body><div class="container">
+
+<div style="display:flex;">
+<div style="flex: auto;"><header>
+<a style="text-decoration: none; color: white;"  href="/"><h1 style="font-size:40px">CTF Formatif - Learning</h1></a>
+
+ <span class="version">Version 1.2</span>
+
+</header>
+<div class="global-menu">
+<nav>
+<ul>
+<li><a href="">Climbers CTF</a></li></ul>
+</nav>
+</div>
+</div>
+
+<div style="background: black;">
+<img style="float:right; margin-right: 10px;" src="/images/logo-blanc.png" alt="Logo" width="100px">
+</div>
+</div>
+
+<div class="content-container">
+<main><h1>Adresses IP</h1>
+<h3 id="description">Description</h3>
+<p align="justify">Une Adresse IP (Internet Protocol) est un numéro d'identification qui est attribué de façon permanente ou provisoire à chaque périphérique relié à un réseau informatique qui utilise l'Internet Protocol. Cette adresse est assignée soit individuellement par l'administrateur du réseau local dans le sous-réseau correspondant, soit automatiquement via le protocole DHCP[1]. Si l'ordinateur dispose de plusieurs interfaces, chacune dispose d'une adresse IP spécifique. Une interface peut également disposer de plusieurs adresses IP.</p>
+<hr>
+<h3 id="fonctions-et-utilisations">Fonctions et utilisations</h3>
+<p align="justify">Une Adresse IP remplit deux fonctions principales. Il permet d'identifier l'hôte, ou plus précisément son interface réseau. Et fournit l'emplacement de l'hôte dans le réseau, et donc la capacité d'établir un chemin vers cet hôte. Chaque paquet transmis par le protocole IP, contient l'adresse IP de l'émetteur ainsi que l'adresse IP du destinataire. <br>L’adresse IP est composée de 4 octets allant de 0 à 255 séparés par des points. Chaque adresse IP appartient à une classe qui correspond à une plage d’adresses IP.  </p>
+<p><strong>/!\ A noter:</strong><br>
+Certaines adresse IP sont reservés et ne sont pas utilisables pour adresser des ordinateurs individuels, voir: Broadcast[2].</p>
+<hr>
+<p><del>### Adresse IP : Publique &amp; Privée</del></p>
+<blockquote>
+<p><del>Les adresses IP <strong>publiques</strong> sont utilisées sur Internet. Une adresse IP publique est unique dans le monde, alors que pour une adresse IP <strong>privée</strong> c’est dans le réseau local qu’elle est unique.</del></p>
+</blockquote>
+<hr>
+<h3 id="les-classes">Les Classes</h3>
+<p>Au total, il existe 5 types de classes: A, B, C, D et E. Elle servent à adapter l’adressage selon la taille du réseau. Cette notion de classe est desormais obsolète du fait de la pénurie d&rsquo;adresses du début des années 2010.</p>
+<p><strong>/!\ A noter:</strong><br>
+Dans la pratique, au début des années 2010, de nombreux matériels et logiciels se sont basés sur ce système de classe, y compris les algorithmes de routage des protocoles dit &lsquo;classless&rsquo; (cf. Cisco CCNA Exploration - Protocoles et concepts de routage). Il est donc important de les connaitres.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Classe</th>
+<th style="text-align:center">Masque réseau</th>
+<th style="text-align:center">Plage d&rsquo;adresses réseau</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">A</td>
+<td style="text-align:center">255.0.0.0</td>
+<td style="text-align:center">0.0.0.0      ~      126.255.255.255</td>
+</tr>
+<tr>
+<td style="text-align:center">B</td>
+<td style="text-align:center">255.255.0.0</td>
+<td style="text-align:center">128.0.0.0    ~      191.255.255.255</td>
+</tr>
+<tr>
+<td style="text-align:center">C</td>
+<td style="text-align:center">255.255.255.0</td>
+<td style="text-align:center">192.0.0.0    ~      223.255.255.255</td>
+</tr>
+<tr>
+<td style="text-align:center">D</td>
+<td style="text-align:center">240.0.0.0</td>
+<td style="text-align:center">224.0.0.0    ~      239.255.255.255</td>
+</tr>
+<tr>
+<td style="text-align:center">E</td>
+<td style="text-align:center">NA</td>
+<td style="text-align:center">240.0.0.0    ~      255.255.255.255</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="adresse-ip-et-nom-de-domaine">Adresse IP et nom de domaine</h3>
+<p align="justify">Le plus souvent, pour se connecter à un serveur informatique, l'utilisateur ne donne pas l'adresse IP du serveur, mais le nom de domaine de celui ci (par exemple: www.wikipedia.org). Ce nom de domaine est ensuite résolu en adresse IP par l'ordinateur de l'utilisateur en faisant appel au système de noms de domaine (ou DNS[4]). Ce n'est qu'une fois l'adresse obtenue qu'il est possible d'initier une connexion.</p>
+<hr>
+<h3 id="adresses-de-diffusion">Adresses de diffusion</h3>
+<ul>
+<li>L&rsquo;adresse <code>255.255.255.255</code> est une adresse de diffusion (broadcast), limitée au même sous-réseau que la liaison locale utilisée, d&rsquo;un hôte à tous les hôtes de ce sous-réseau ; elle sert notamment à découvrir les routeurs connectés adressés dans tout sous-réseau auquel l&rsquo;hôte source est connecté.</li>
+<li>La première adresse d&rsquo;un sous-réseau spécifie le réseau lui-même, elle sert pour des messages non nécessairement destinés aux seuls routeur mais qui ne doivent normalement pas être reroutés vers Internet.</li>
+<li>La dernière adresse est une adresse de diffusion (broadcast) pour des messages normalement destinés aux seuls les routeurs d&rsquo;une liaison spécifique, permettant les échanges entre tous les hôtes de ce sous-réseau et les réseaux extérieurs (dont l&rsquo;Internet global). Cette adresse n&rsquo;est habituellement pas reroutée vers Internet, sauf en cas d&rsquo;utilisation de protocoles particuliers.</li>
+</ul>
+<hr>
+<h3 id="ip-versions">IP Versions</h3>
+<p>Aujourd&rsquo;hui, deux versions du protocole Internet sont couramment utilisées sur Internet, l'<strong>IPv4</strong> pour protocole Internet version 4 et l'<strong>IPv6</strong> pour protocole Internet version 6.</p>
+<p align="justify">L'épuisement des adresses IPv4 a conduit au développement d'une nouvelle version d'IP, l'IPv6. Le manque d'adresse IPv4 est dans un premier temps contourné grâce à l'utilisation de techniques de traduction d'adresses comme le NAT[3]. Le nombre d'adresses IPv4 publiques est officiellement arrivé à saturation le 3 février 2011. Les adresses IP sont généralement écrites et affichées dans des notations lisibles par l'homme. </p>  
+<h4 id="ipv4">IPv4</h4>
+<p>Les adresses IPv4 sont généralement représentées en notation <strong>décimale</strong>, composée de quatre nombres décimaux, chacun allant de 0 à 255, séparés par des points. Les adresses IPv4 sont codées sur 32 bits, ce qui limite à 4,3 x 10^+9 adresses possibles. Prenons l&rsquo;adresse IPv4 suivante: <code>172.16.254.1</code>. Dans cette exemple, chaque partie séparé par un point, représente un groupe de 8 bits (un octet) de l&rsquo;adresse. Dans certains cas d&rsquo;écriture technique, les adresses IPv4 peuvent être présentées dans diverses représentations hexadécimales, octales ou binaires.</p>
+<p><strong>Adresse IPv4 : notation décimale -&gt; binaire</strong></p>
+<pre><code>   172  .   16   .  254   .   1
+    v        v       v        v 
+10101100.00010000.11111110.00000001
+&lt;-------&gt;&lt;------&gt;&lt;--------&gt;&lt;------&gt;
+                   8 bits 
+    8   +    8   +    8   +   8   =  32 bits
+</code></pre><h4 id="ipv6">IPv6</h4>
+<p>Lors de la création de l&rsquo;IPv4 à l&rsquo;IPv6, la taille de l&rsquo;adresse est passé de 32 à 128 bits. Permettant d&rsquo;atteindre ainsi 3.4×10^+38 d&rsquo;adresses  possibles, jugé suffisant pour l&rsquo;avenir. Les 128 bits d&rsquo;une adresse IPv6 sont représentés en 8 groupes de 16 bits chacun. Chaque groupe est écrit en quatre chiffres <strong>hexadécimaux</strong> et les groupes sont séparés par des deux-points &ldquo;:&rdquo;<br>
+Prenons l&rsquo;IPv6 suivante: <code>2001: 0db8: 0000: 0000: 0000: ff00: 0042: 8329</code></p>
+<p>Pour plus de commodité et de clarté, la représentation d&rsquo;une adresse IPv6 peut être raccourcie avec les règles suivantes.</p>
+<ul>
+<li>Un ou plusieurs zéros à la tête de n&rsquo;importe quel groupe de chiffres hexadécimaux sont supprimés, ce qui est généralement fait pour tous les zéros de tête.</li>
+</ul>
+<blockquote>
+<p>Par exemple, le groupe 0042 est converti en 42.</p>
+</blockquote>
+<ul>
+<li>Les sections consécutives de zéros sont remplacées par deux deux-points &ldquo;::&rdquo;. Cela ne peut être utilisé qu&rsquo;une seule fois dans une adresse, car une utilisation multiple rendrait l&rsquo;adresse indéterminée. La RFC 5952 requiert qu&rsquo;un double-point ne soit pas utilisé pour indiquer une seule section omise de zéros. En appliquant ses règles, l&rsquo;adresse IPv6 devient:</li>
+</ul>
+<pre><code>Adresse IPV6 initiale:
+&gt; 2001: 0db8: 0000: 0000: 0000: ff00: 0042: 8329
+
+Après avoir supprimé tous les zéros non significatifs de chaque groupe:
+&gt; 2001:db8:0:0:0:ff00:42:8329
+ 
+Après avoir omis les sections consécutives de zéros:
+&gt; 2001:db8::ff00:42:8329
+</code></pre><p>L&rsquo;adresse de &ldquo;bouclage&rdquo; (loopback, en anglais) <code>0000: 0000: 0000: 0000: 0000: 0000: 0000: 0001</code> est abrégée en <code>::1</code> en utilisant les deux règles.</p>
+<hr>
+<h3 id="glossaire">Glossaire</h3>
+<p><strong>[1]: DHCP</strong><br>
+Dynamic Host Configuration Protocol (DHCP) est un protocole réseau dont le rôle est d’assurer la configuration automatique des paramètres IP d’une station ou d&rsquo;une machine, notamment en lui attribuant automatiquement une adresse IP et un masque de sous-réseau.</p>
+<p><strong>[2]: Broadcast</strong><br>
+Dans un réseaue informatique, Broadcast fait référence à la transmission d&rsquo;un paquet qui sera reçu par chaque appareil simultanément sur le réseau.</p>
+<p><strong>[3]: NAT</strong><br>
+En réseau informatique, on dit qu&rsquo;un routeur fait du network address translation (NAT) (« traduction d&rsquo;adresse réseau », lorsqu&rsquo;il fait correspondre des adresses IP à d&rsquo;autres adresses IP. Un cas courant est de permettre à des machines disposant d&rsquo;adresses privées qui font partie d&rsquo;un intranet et ne sont ni uniques ni routables à l&rsquo;échelle d&rsquo;Internet, de communiquer avec le reste d&rsquo;Internet en utilisant vers l&rsquo;extérieur des adresses externes publiques, uniques et routables.</p>
+<p><strong>[4]: DNS</strong><br>
+Le Domain Name System, généralement abrégé DNS, qu&rsquo;on peut traduire en « système de noms de domaine », est le service informatique distribué utilisé pour traduire les noms de domaine Internet en adresse IP ou autres enregistrements.</p>
+<hr>
+<h3 id="références">Références</h3>
+<p>Suivre les liens suivants pour approfondir les sujets abordés:</p>
+<blockquote>
+<p><a href="https://fr.wikipedia.org/wiki/Adresse_IP">En savoir plus sur l&rsquo;Adresse IP</a><br>
+<a href="https://fr.wikipedia.org/wiki/Network_address_translation">En savoir plus sur le NAT</a><br>
+<a href="https://en.wikipedia.org/wiki/IPv6_address#Representation">En savoir plus sur la représentaion des IPv6</a><br>
+<a href="https://fr.wikipedia.org/wiki/Domain_Name_System">En savoir plus sur le DNS</a></p>
+</blockquote>
+<div class="edit-meta"><br></div><nav class="pagination"><a class="nav nav-prev" href="/reseau/" title="Reseau"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Reseau</a>
+<a class="nav nav-next" href="/reseau/wireshark/" title="Wireshark">Next - Wireshark <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Modified and adapted here by <a href="https://github.com/ElBucheron/Projet-CTF-Formatif"><b>Ugo</b></a>.</p>
+</footer>
+</main><div class="sidebar">
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script type="text/javascript">
+
+
+var idx, searchInput, searchResults = null
+var documents = []
+
+function renderSearchResults(results){
+
+    if (results.length > 0) {
+
+        
+        if (results.length > 9){
+            results = results.slice(0,10)
+        }
+
+        
+        searchResults.innerHTML = ''
+
+        
+        results.forEach(result => {
+        
+            
+            var article = document.createElement('div')
+            article.innerHTML = `
+            <a href="${result.ref}"><em style="color: blue;">${documents[result.ref].title}</em></a>
+            `
+            searchResults.appendChild(article)
+        })
+
+    
+    } else {
+        searchResults.innerHTML = '<p>No results found.</p>'
+    }
+}
+
+function registerSearchHandler() {
+
+    
+    searchInput.oninput = function(event) {
+
+        
+        if (searchInput.value == '') {
+            
+            searchResults.innerHTML = ''
+        } else {
+            
+            
+            var query = event.target.value
+
+            
+            var results = idx.search(query + '*')
+
+            
+            renderSearchResults(results)
+        }
+    }
+
+    
+    searchInput.focus()
+    searchInput.placeholder = ''
+}
+
+window.onload = function() {
+
+    
+    searchInput = document.getElementById('search-input')
+    searchResults = document.getElementById('search-results')
+
+    
+    fetch('/index.json', {
+        method: 'get'
+    }).then(
+        res => res.json()
+    ).then(
+        res => {
+
+            
+            idx = lunr(function() {
+                this.ref('url')
+                this.field('title')
+                this.field('content')
+
+                res.forEach(function(doc) {
+                    this.add(doc)
+                    documents[doc.url] = {
+                        'title': doc.title,
+                        'content': doc.content,
+                    }
+                }, this)
+            })
+
+            
+            registerSearchHandler()
+        }
+    ).catch(
+        err => {
+            searchResults.innerHTML = `<p>${err}</p>`
+        }
+    )
+}
+</script>
+<input style="margin: 5px;"  id="search-input" type="search" size="47%"  placeholder="Loading..." name="search" value="Rechercher" onclick="this.value=''">
+
+<section style="border-bottom: 2px solid gray;" id="search-results" class="search"></section>
+
+
+
+<nav class="slide-menu">
+<ul>
+<li class=""><a href="/">Home</a></li>
+
+<li class=" has-sub-menu"><a href="/system/">System<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="/system/files/">Files</a></li>
+<li class=""><a href="/system/registres/">Registre</a></li>
+<li class=""><a href="/system/hash/">Hash</a></li>
+</ul>
+  
+</li>
+
+<li class="parent has-sub-menu"><a href="/reseau/">Reseau<span class="mark opened">-</span></a>
+  
+<ul class="sub-menu">
+<li class="active"><a href="/reseau/ip_address/">Adresses IP</a></li>
+<li class=""><a href="/reseau/wireshark/">Wireshark</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="/aspect_juridique/">Aspect Juridique<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="/aspect_juridique/cnil/">CNIL</a></li>
+<li class=""><a href="/aspect_juridique/asp_jur/">Cybersécurité - Jurdique</a></li>
+<li class=""><a href="/aspect_juridique/rgpd/">RGPD</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="/web/">Web<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="/web/html_php/">HTML/CSS - PHP</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="/stegano/">Steganographie</a>
+  
+</li>
+</ul>
+</nav>
+
+
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>

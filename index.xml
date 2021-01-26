@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on CTF Formatif - Learning</title>
+    <link>/</link>
+    <description>Recent content in Home on CTF Formatif - Learning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Thu, 19 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Files</title>
+      <link>/system/files/</link>
+      <pubDate>Sun, 22 Mar 2020 13:58:15 +0000</pubDate>
+      
+      <guid>/system/files/</guid>
+      <description>Identification L&amp;rsquo;identification se fait premièrement par la lecture de l&amp;rsquo;extension du fichier qui se trouve juste derrière le nom du fichier (Attention sous windows, par défaut les extensions de fichier sont caché), on peut trouver par exemple &amp;ldquo;.png&amp;rdquo; ou &amp;ldquo;.jpg&amp;rdquo; pour une image. Cette identification permet à l&amp;rsquo;OS d&amp;rsquo;executer l&amp;rsquo;outil par défaut relié et configuré pour cette extension.
+La signature d&amp;rsquo;un fichier, une séquence unique de bits présent dans l&amp;rsquo;entête d&amp;rsquo;un fichier.</description>
+    </item>
+    
+    <item>
+      <title>Registre</title>
+      <link>/system/registres/</link>
+      <pubDate>Wed, 26 Feb 2020 13:58:15 +0000</pubDate>
+      
+      <guid>/system/registres/</guid>
+      <description>La base de registre est un élément fondamental du système. C&amp;rsquo;est une gigantesque base de données qui peut atteindre plusieurs dizaines de méga. Afin de faciliter la gestion de cette base, celle ci est organisée en 5 clés principales, elles mêmes divisées en sous clés.
+Les 5 clés et leurs fonctions HKEY_CLASS_ROOT : Cette clé gère les extensions des fichiers ainsi que les liaisons avec les logiciels et serveurs ActiveX. Toutes les extensions des fichiers et leur programme correspondant sont gérés ici.</description>
+    </item>
+    
+    <item>
+      <title>Adresses IP</title>
+      <link>/reseau/ip_address/</link>
+      <pubDate>Sun, 02 Feb 2020 15:14:53 +0000</pubDate>
+      
+      <guid>/reseau/ip_address/</guid>
+      <description>Description Une Adresse IP (Internet Protocol) est un numéro d&#39;identification qui est attribué de façon permanente ou provisoire à chaque périphérique relié à un réseau informatique qui utilise l&#39;Internet Protocol. Cette adresse est assignée soit individuellement par l&#39;administrateur du réseau local dans le sous-réseau correspondant, soit automatiquement via le protocole DHCP[1]. Si l&#39;ordinateur dispose de plusieurs interfaces, chacune dispose d&#39;une adresse IP spécifique. Une interface peut également disposer de plusieurs adresses IP.</description>
+    </item>
+    
+    <item>
+      <title>CNIL</title>
+      <link>/aspect_juridique/cnil/</link>
+      <pubDate>Sun, 02 Feb 2020 15:14:53 +0000</pubDate>
+      
+      <guid>/aspect_juridique/cnil/</guid>
+      <description>La CNIL, c&amp;rsquo;est quoi ? La Commission Nationale de l&amp;rsquo;Informatique et des Libertés (CNIL) a été créée par la loi Informatique et Libertés du 6 janvier 1978.
+Elle est chargée de veiller à la protection des données personnelles contenues dans les fichiers et traitements informatiques ou papiers, aussi bien publics que privés.
+Ainsi, elle est chargée de veiller à ce que l&amp;rsquo;informatique soit au service du citoyen et qu&amp;rsquo;elle ne porte atteinte ni à l&amp;rsquo;identité humaine, ni aux droits de l&amp;rsquo;homme, ni à la vie privée, ni aux libertés individuelles ou publiques.</description>
+    </item>
+    
+    <item>
+      <title>Cybersécurité - Jurdique</title>
+      <link>/aspect_juridique/asp_jur/</link>
+      <pubDate>Sun, 02 Feb 2020 15:14:53 +0000</pubDate>
+      
+      <guid>/aspect_juridique/asp_jur/</guid>
+      <description>Sécurité du SI Risques engageant la responsabilité du gérant du SI Responsabilité pénale Il y a obligation, de la part du gérant, de mettre en œuvre des mesures techniques et d’organisation pour protéger les données personnelles qui sont collectées dans le cadre de son activité. Contre potentiellement l&amp;rsquo;altération, leur destruction, la diffusion ou le non-acces desdites données.
+  Article 34 – Loi informatique et Libertés Modifié par Loi n°2004-801 du 06 août 2004 « Le responsable du traitement est tenu de prendre toutes précautions utiles, au regard de la nature des données et des risques présentés par le traitement, pour préserver la sécurité des données et, notamment, empêcher qu&amp;rsquo;elles soient déformées, endommagées, ou que des tiers non autorisés y aient accès.</description>
+    </item>
+    
+    <item>
+      <title>Hash</title>
+      <link>/system/hash/</link>
+      <pubDate>Sun, 02 Feb 2020 15:14:53 +0000</pubDate>
+      
+      <guid>/system/hash/</guid>
+      <description>La somme de contrôle (Hash) La version basique d’un tel mécanisme est appelée “somme de contrôle”.
+Le but d’une somme de contrôle est en quelque sorte d’être “l’empreinte” d’une donnée (attention, cette “empreinte” n’est pas une signature et ne garantit pas pour autant l’identité). Un exemple très simplifié serait de compter le nombre de lettres dans un message et de rajouter ce nombre à la fin dudit message. De cette manière, un destinataire peut immédiatement vérifier que le message n’a pas été coupé par erreur.</description>
+    </item>
+    
+    <item>
+      <title>HTML/CSS - PHP</title>
+      <link>/web/html_php/</link>
+      <pubDate>Sun, 02 Feb 2020 15:14:53 +0000</pubDate>
+      
+      <guid>/web/html_php/</guid>
+      <description>Table of contents   HTML &amp;amp; CSS
+1.1 Balises &amp;amp; Attributs
+_ Balises
+_ Attributs
+1.2 Balises fréquentes
+  PHP
+2.1 Structure du PHP
+2.2 Formulaires
+2.3 Methode : GET vs POST
+3. JavaScript
+  Références
+   HTML &amp;amp; CSS  HTML
+HyperText Markup Language a fait son apparition dès 1991 lors du lancement du Web. Son rôle est de gérer et organiser le contenu.</description>
+    </item>
+    
+    <item>
+      <title>RGPD</title>
+      <link>/aspect_juridique/rgpd/</link>
+      <pubDate>Sun, 02 Feb 2020 15:14:53 +0000</pubDate>
+      
+      <guid>/aspect_juridique/rgpd/</guid>
+      <description>Trois principes fondamentaux :
+ Responsabilité, Transparence &amp;amp; Confiance
+ Donnée personnelle La notion de « données personnelles » est à comprendre de façon très large. Une « donnée personnelle » est « toute information se rapportant à une personne physique identifiée ou identifiable ».
+Une personne peut être identifiée :
+ directement (ex: nom, prénom) ou indirectement (ex : identifiant (n° client), un numéro (de téléphone), une donnée biométrique, plusieurs éléments spécifiques propres à son identité physique, physiologique, génétique, psychique, économique, culturelle ou sociale, mais aussi la voix ou l’image).</description>
+    </item>
+    
+    <item>
+      <title>Wireshark</title>
+      <link>/reseau/wireshark/</link>
+      <pubDate>Sun, 02 Feb 2020 15:14:53 +0000</pubDate>
+      
+      <guid>/reseau/wireshark/</guid>
+      <description>Wireshark est un outil très utilisé en réseau, il permet de surveiller les paquets de données échangés sur un réseau.
+ C&amp;rsquo;est un logiciel multi-plateforme utilisable sous Linux, Windows et Mac. Capable de lire des données sur les réseaux Ethernet, Wifi (IEEE 802.11), PPP, Loopback, FTTH et tout autres réseau utilisant les protocoles IP et il utilise pcap pour capturer les paquets.
+ Code couleur Comme vous pouvez le voir sur le figure précédente, Wireshark utilise un code couleur:</description>
+    </item>
+    
+  </channel>
+</rss>
