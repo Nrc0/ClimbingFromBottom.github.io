@@ -29,6 +29,11 @@ function setupChalls() {
 
 	var list = JSON.parse(eval(cat));
 
+  var jsonKey = document.createElement("script");
+  jsonKey.type = "text/javascript";
+  jsonKey.src = "challenge-files/" + cat + "/" + list[0].name + "/key.json";
+  $("head").append(jsonKey);
+
 	// ## Adding the first chall of the list ##
 	var $challDiv = $('.chall');
 	$challDiv.addClass(list[0].name);
@@ -55,10 +60,17 @@ function setupChalls() {
 
 	header[1].innerHTML = list[0].title;
 	body[1].innerHTML = list[0].desc;
+  //footer[1].attr('onclick', "getKey('challenge-files/" + cat + "/" + list[0].name + "/key.json');")
 
 	//console.log($challDiv);
 
 	for (i=1; i < list.length; i++) {
+
+    var jsonKey = document.createElement("script");
+    jsonKey.type = "text/javascript";
+    jsonKey.src = "challenge-files/" + cat + "/" + list[i].name + "/key.json";
+    $("head").append(jsonKey);
+
 		var $challDiv = $('.' + list[i-1].name).clone();
 		$challDiv.attr('data-target', '#' + list[i].name);
 		$challDiv.addClass(list[i].name);
@@ -84,7 +96,8 @@ function setupChalls() {
 
 		header[1].innerHTML = list[i].title;
 		body[1].innerHTML = list[i].desc;
+    //footer[1].attr('onclick', "getKey('challenge-files/" + cat + "/" + list[i].name + "/key.json');")
 	}
 }
 
-setupChalls();
+window.onload = setupChalls;

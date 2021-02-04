@@ -53,7 +53,7 @@ const linkReplacer = function(fullMatch, tagTitle, tagURL){
 	return '<a href="' + tagURL + '">' + tagTitle + '</a>';
 }
 const headingReplacer = function(fullMatch, tagStart, tagContents){
-	return '\n<h' + tagStart.trim().length + '>' + tagContents + '</h' + tagStart.trim().length + '>';
+	return '\n<h' + tagStart.trim().length + '>' + '<span>'  + tagContents + '</span>' + '</h' + tagStart.trim().length + '>';
 }
 const boldItalicsReplacer = function(fullMatch, tagStart, tagContents){
 	return '<' + ( (tagStart.trim().length==1)?('em'):('strong') ) + '>'+ tagContents + '</' + ( (tagStart.trim().length==1)?('em'):('strong') ) + '>';
