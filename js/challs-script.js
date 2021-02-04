@@ -31,7 +31,7 @@ function setupChalls() {
 
   var jsonKey = document.createElement("script");
   jsonKey.type = "text/javascript";
-  jsonKey.src = "challenge-files/" + cat + "/" + list[0].name + "/key.json";
+  jsonKey.src = "https://raw.githubusercontent.com/ClimbingFromBottom/ClimbingFromBottom.github.io/main/challenge-files/" + cat + "/" + list[0].name + "/key.json";
   $("head").append(jsonKey);
 
 	// ## Adding the first chall of the list ##
