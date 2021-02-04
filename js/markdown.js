@@ -133,4 +133,4 @@ const file = urlParams.get('file');
 
 document.getElementById('title-cat').innerHTML = (cat.charAt(0).toUpperCase() + cat.slice(1))
 
-showMDpage('https://raw.githubusercontent.com/ClimbingFromBottom/ClimbingFromBottom/main/learning-md/' + cat + '/' + file + '.md');
+showMDpage('https://raw.githubusercontent.com/ClimbingFromBottom/ClimbingFromBottom.github.io/main/learning-md/' + cat + '/' + file + '.md');
