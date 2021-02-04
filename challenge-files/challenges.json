@@ -1,0 +1,4 @@
+forensic = '[{"name": "whatafile", "title": "What a file", "desc": "Don\'t remember what file is this..."}, {"name" : "hum", "title": "Huuum", "desc": "Where\'s the flag ?"}]';
+network = '[{"name": "listening", "title": "Listening", "desc": "I\'ve capture a network connection last time and I\'m sure that I\'ve got a password inside"}]';
+web = '[{"name": "badmemory", "title": "Bad memory", "desc": ""}, {"name" : "ninja", "title": "Ninja", "desc": ""}]';
+cryptographie = '[{"name": "youcansolvethis", "title": "#YouCanSolveThis", "desc": "775bb961b81da1ca49217a48e533c832c337154a"}, {"name" : "securityrequired", "title": "Security Required", "desc": "Hashing is a good way to store a password, what should I do about my password \'ItsTimeToRock\' ? What about 256 bits, once, twice, three, four, five, wow that should be enough"}, {"name" : "ilovesalad", "title": "I love salad", "desc": "Oryhob"}]';

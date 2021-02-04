@@ -1,0 +1,343 @@
+
+/* ################################### */
+/* ########### Global CSS ############ */
+/* ################################### */
+
+body {
+  font-family: 'Athiti';
+  font-size: 1em;
+  background-color: white;
+  color: black;
+}
+
+.learning-page {
+  background-color: white;
+  color: black;
+}
+
+.challenges-page {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 4em;
+}
+
+img {
+  margin: 5px;
+
+  /*Animations*/
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu-bar {
+  font-size: 2em;
+  height: 130px;
+}
+
+.learning-page .menu-links {
+  text-decoration: none;
+  color: black;
+}
+
+.learning-page .menu-links:hover {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+}
+
+
+.challenges-page .menu-links {
+  text-decoration: none;
+  color: white;
+}
+
+.challenges-page .menu-links:hover {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+}
+
+/* blinking cursor */
+#cursor {
+  display: inline-block;
+  background: black;
+  -webkit-animation: blink 1s infinite;
+  width: 15px;
+  height: 30px;
+}
+
+@-webkit-keyframes blink {
+  0% {background: black}
+  50% {background: white}
+  100% {background: black}
+}
+
+.btn-black {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: solid white 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-black:hover {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+}
+
+.btn-white {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  border: solid black 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-white:hover {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+}
+
+.key-field {
+  flex-grow:1;
+}
+
+.chall {
+  border: solid white 2px;
+  border-radius: 10px;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  color: white;
+  align-items: center;
+  cursor: pointer;
+}
+
+.chall img {
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0px;
+  margin-right: 10px;
+}
+
+.chall:hover {
+  background-color: white;
+  color: black;
+}
+
+.box-cat {
+  border: solid black 2px;
+  border-radius: 10px;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.box-cat img {
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0px;
+  margin-right: 10px;
+  filter: invert(1);
+}
+
+.cat-title {
+  cursor: pointer;
+}
+
+.cat-title:hover {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.cat-links a {
+  text-decoration: none;
+  background-color: black;
+  border-radius: 5px;
+  margin: 5px;
+  margin-left: 60px;
+  padding-left: 5px;
+  color: white;
+  font-size: 1.5em;
+}
+
+.cat-links a:hover {
+  background-color: white;
+  color: black;
+  border: solid black 2px;
+  margin-bottom: 1px;
+}
+
+.content {
+  border: solid black 2px;
+  border-radius: 10px;
+  margin: 50px;
+  padding: 20px;
+}
+
+.fsm {
+  position:relative;
+  border: solid black 2px;
+  border-radius: 10px;
+  width: 300px;
+  padding: 30px;
+  margin: 10px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+
+  /*Animations*/
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.fsm .fsm_corner {
+position: absolute;
+top: 0;
+right: 0;
+width: 2em;
+height: 2em;
+background-color: #8a8a8b;
+}
+
+.fsm .fsm_corner .fsm_corner-triangle {
+position: absolute;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 2em 2em 0;
+border-color: transparent #000 transparent transparent;
+}
+
+.fsm:hover img{
+  margin: 0px;
+  width: 110px;
+}
+
+.learning-page .fsm {
+  filter: invert(1);
+}
+
+.modal-content {
+  color: black;
+  font-size: 1.5em;
+  border: solid white 2px;
+}
+
+.modal-title{
+  font-family: 'Londrina Solid', cursive;
+  font-size: 2em;
+}
+
+.modal-header, .modal-footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  border: 0px;
+}
+
+.modal-header .close {
+  margin: 0;
+  float: right;
+  opacity: 1;
+  padding: 0px;
+}
+
+.modal-header .close:hover {
+  opacity: 0.5;
+}
+
+.modal-body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border: solid black 4px;
+}
+
+#key-field.invalid {
+    border: solid coral 2px;
+    border-radius: 5px;
+    /* also need animation and -moz-animation */
+    -webkit-animation: shake .5s linear;
+}
+#key-field.second-invalid {
+    /* also need animation and -moz-animation */
+    -webkit-animation: shake .5s linear;
+}
+/* also need keyframes and -moz-keyframes */
+@-webkit-keyframes shake {
+    8%, 41% {
+        -webkit-transform: translateX(-10px);
+    }
+    25%, 58% {
+        -webkit-transform: translateX(10px);
+    }
+    75% {
+        -webkit-transform: translateX(-5px);
+    }
+    92% {
+        -webkit-transform: translateX(5px);
+    }
+    0%, 100% {
+        -webkit-transform: translateX(0);
+    }
+}
+
+/* ################################### */
+
+/* ################################### */
+/* ###### CSS for the Menu page ###### */
+/* ################################### */
+
+.menu-learning, .menu-challenges {
+  position: relative;
+  border-radius: 10px;
+  width: 300px;
+  padding: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.menu-learning {
+  border: solid black 2px;
+  background-color: white;
+  color: black;
+
+}
+
+.menu-challenges {
+  border: solid black 2px;
+  background-color: black;
+  color: white;
+}
+
+/* ################################### */
+
+/* ############# Footer ############## */
+.footer {
+  position: static;
+  display: block;
+  
+  /*position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;*/
+  padding: 1rem;
+  text-align: center;
+}
+/* ################################### */
