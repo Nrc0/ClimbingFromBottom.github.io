@@ -6,7 +6,7 @@
 
 ## Donnée personnelle
 
-**La notion de « données personnelles » est à comprendre de façon très large**. Une « donnée personnelle » est _« toute information se rapportant à une personne physique identifiée ou identifiable »._
+**La notion de « données personnelles » est à comprendre de façon très large**. Une « donnée personnelle » est *« toute information se rapportant à une personne physique identifiée ou identifiable ».*
 
 Une personne peut être identifiée :
 - **directement** (ex: nom, prénom)
@@ -20,7 +20,7 @@ L’identification d’une personne physique peut être réalisée :
 ## Traitement de données personnelles
 
 **Cette notion est également très large.**  
-Un __« traitement de données personnelles »__ est une opération, ou ensemble d'opérations, portant sur des données personnelles. Quel que soit le procédé utilisé, cela peut etre via collecte, enregistrement, organisation, conservation, adaptation, modification, extraction, consultation, utilisation, communication par transmission diffusion ou toute autre forme de mise à disposition, rapprochement.  
+Un **« traitement de données personnelles »** est une opération, ou ensemble d'opérations, portant sur des données personnelles. Quel que soit le procédé utilisé, cela peut etre via collecte, enregistrement, organisation, conservation, adaptation, modification, extraction, consultation, utilisation, communication par transmission diffusion ou toute autre forme de mise à disposition, rapprochement.  
 
 Un traitement de données doit avoir **un objectif, une finalité**, c’est-à-dire que vous ne pouvez pas collecter ou traiter des données personnelles simplement au cas où cela vous serait utile un jour. A chaque traitement de données doit être assigné un but, qui doit bien évidemment être légal et légitime au regard de votre activité professionnelle.
 
