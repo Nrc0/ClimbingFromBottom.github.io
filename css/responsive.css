@@ -1,5 +1,9 @@
-@media screen and (max-width: 800px)
+@media screen and (max-width: 1000px)
 {
+  .fsm {
+    margin: 0 auto;
+  }
+
   .footer {
     position: static;
     display: block;
