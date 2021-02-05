@@ -263,13 +263,13 @@ border-color: transparent #000 transparent transparent;
   border: solid black 4px;
 }
 
-#key-field.invalid {
-    border: solid coral 2px;
+.key-field.invalid {
+    border: solid coral 3px;
     border-radius: 5px;
     /* also need animation and -moz-animation */
     -webkit-animation: shake .5s linear;
 }
-#key-field.second-invalid {
+.key-field.second-invalid {
     /* also need animation and -moz-animation */
     -webkit-animation: shake .5s linear;
 }

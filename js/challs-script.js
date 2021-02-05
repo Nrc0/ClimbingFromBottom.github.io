@@ -1,24 +1,28 @@
-function getKey(filepath) {
-	var input = document.getElementById("key-field");
+function checkKey(cat, chall) {
+	var input = document.getElementById("key-field-" + chall);
+	var $input = $("#key-field-" + chall);
 
-	var key = JSON.parse(data).key;
+  filepath = "https://raw.githubusercontent.com/ClimbingFromBottom/ClimbingFromBottom.github.io/main/challenge-files/" + cat + "/" + chall + "/key.json";
 
-	if(sha1(input.value) == key){
-		var modal = document.getElementById("whatafile").childNodes; // modal
-		var tmp = modal[1].childNodes; // modal-dialog
-		tmp = tmp[1].childNodes; // modal-content
-		var header = tmp[1].childNodes; // modal-header
-		var body = tmp[3].childNodes; // modal-body
-		var footer = tmp[5].childNodes; // modal-footer
-		
-		body[1].innerHTML = JSON.parse(data).text;
-		body[1].style.color = "green";
-	} else {
-		input.classList.add("invalid");
-		$('.key-field').on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e){
-		      $('.key-field').delay(200).removeClass('invalid');
-		});
-	}
+  $.get(filepath, function(json) {
+	  var key = JSON.parse(eval(json)).key;
+    if(sha1(input.value) == key){
+      var modal = document.getElementById("whatafile").childNodes; // modal
+      var tmp = modal[1].childNodes; // modal-dialog
+      tmp = tmp[1].childNodes; // modal-content
+      var header = tmp[1].childNodes; // modal-header
+      var body = tmp[3].childNodes; // modal-body
+      var footer = tmp[5].childNodes; // modal-footer
+      
+      body[1].innerHTML = JSON.parse(data).text;
+      body[1].style.color = "green";
+    } else {
+      input.classList.add("invalid");
+      $input.on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e){
+            $input.delay(200).removeClass('invalid');
+      });
+    }
+  });
 }
 
 function setupChalls() {
@@ -28,11 +32,6 @@ function setupChalls() {
 	document.getElementById('title-cat').innerHTML = (cat.charAt(0).toUpperCase() + cat.slice(1))
 
 	var list = JSON.parse(eval(cat));
-
-  var jsonKey = document.createElement("script");
-  jsonKey.type = "text/javascript";
-  jsonKey.src = "https://raw.githubusercontent.com/ClimbingFromBottom/ClimbingFromBottom.github.io/main/challenge-files/" + cat + "/" + list[0].name + "/key.json";
-  $("head").append(jsonKey);
 
 	// ## Adding the first chall of the list ##
 	var $challDiv = $('.chall');
@@ -71,16 +70,22 @@ function setupChalls() {
   } else {
     fileElem.style.display = "none";
   }
-  //footer[1].attr('onclick', "getKey('challenge-files/" + cat + "/" + list[0].name + "/key.json');")
+  footer[1].setAttribute('id', 'key-field-' + list[0].name);
+  //document.getElementById('key-field-' + list[0].name).addEventListener('keypress', function(event) {
+  //  if (event.keyCode == 13) {
+  //    checkKey(cat, list[0].name);
+  //  }
+  //});
 
-	//console.log($challDiv);
+  footer[3].setAttribute('onclick', "checkKey('" + cat + "', '" + list[0].name + "');");
+
 
 	for (i=1; i < list.length; i++) {
 
-    var jsonKey = document.createElement("script");
-    jsonKey.type = "text/javascript";
-    jsonKey.src = "challenge-files/" + cat + "/" + list[i].name + "/key.json";
-    $("head").append(jsonKey);
+    //var jsonKey = document.createElement("script");
+    //jsonKey.type = "text/javascript";
+    //jsonKey.src = "challenge-files/" + cat + "/" + list[i].name + "/key.json";
+    //$("head").append(jsonKey);
 
 		var $challDiv = $('.' + list[i-1].name).clone();
 		$challDiv.attr('data-target', '#' + list[i].name);
@@ -118,7 +123,13 @@ function setupChalls() {
     } else {
       fileElem.style.display = "none";
     }
-    //footer[1].attr('onclick', "getKey('challenge-files/" + cat + "/" + list[i].name + "/key.json');")
+    footer[1].setAttribute('id', 'key-field-' + list[i].name);
+    //document.getElementById('key-field-' + list[i].name).addEventListener('keypress', function(event) {
+    //  if (event.keyCode == 13) {
+    //    checkKey(cat, list[i].name);
+    //  }
+    //});
+    footer[3].setAttribute('onclick', "checkKey('" + cat + "', '" + list[i].name + "');");
 	}
 }
 
