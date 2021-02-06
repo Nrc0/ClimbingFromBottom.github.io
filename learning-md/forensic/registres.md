@@ -1,4 +1,8 @@
-# Registre
+---
+title: "Registre"
+date: 2020-02-26T13:58:15Z
+draft: false
+---
 
 La base de registre est un élément fondamental du système. C'est une gigantesque base de données qui peut atteindre plusieurs dizaines de méga. Afin de faciliter la gestion de cette base, celle ci est organisée en 5 clés principales, elles mêmes divisées en sous clés.
 

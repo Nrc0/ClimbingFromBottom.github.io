@@ -1,19 +1,16 @@
 # Adresses IP
 
 ### Description
-<p align="justify">Une Adresse IP (Internet Protocol) est un numéro d'identification qui est attribué de façon permanente ou provisoire à chaque périphérique relié à un réseau informatique qui utilise l'Internet Protocol. Cette adresse est assignée soit individuellement par l'administrateur du réseau local dans le sous-réseau correspondant, soit automatiquement via le protocole DHCP[1]. Si l'ordinateur dispose de plusieurs interfaces, chacune dispose d'une adresse IP spécifique. Une interface peut également disposer de plusieurs adresses IP.</p>
+Une Adresse IP (Internet Protocol) est un numéro d'identification qui est attribué de façon permanente ou provisoire à chaque périphérique relié à un réseau informatique qui utilise l'Internet Protocol. Cette adresse est assignée soit individuellement par l'administrateur du réseau local dans le sous-réseau correspondant, soit automatiquement via le protocole DHCP[1]. Si l'ordinateur dispose de plusieurs interfaces, chacune dispose d'une adresse IP spécifique. Une interface peut également disposer de plusieurs adresses IP.
 
 ------------------
 ### Fonctions et utilisations
-<p align="justify">Une Adresse IP remplit deux fonctions principales. Il permet d'identifier l'hôte, ou plus précisément son interface réseau. Et fournit l'emplacement de l'hôte dans le réseau, et donc la capacité d'établir un chemin vers cet hôte. Chaque paquet transmis par le protocole IP, contient l'adresse IP de l'émetteur ainsi que l'adresse IP du destinataire. <br>L’adresse IP est composée de 4 octets allant de 0 à 255 séparés par des points. Chaque adresse IP appartient à une classe qui correspond à une plage d’adresses IP.  </p>
+Une Adresse IP remplit deux fonctions principales. Il permet d'identifier l'hôte, ou plus précisément son interface réseau. Et fournit l'emplacement de l'hôte dans le réseau, et donc la capacité d'établir un chemin vers cet hôte. Chaque paquet transmis par le protocole IP, contient l'adresse IP de l'émetteur ainsi que l'adresse IP du destinataire.   
+L’adresse IP est composée de 4 octets allant de 0 à 255 séparés par des points. Chaque adresse IP appartient à une classe qui correspond à une plage d’adresses IP   
 
 **/!\ A noter:**  
 Certaines adresse IP sont reservés et ne sont pas utilisables pour adresser des ordinateurs individuels, voir: Broadcast[2].
 
-------------------
-~~### Adresse IP : Publique & Privée~~
->~~Les adresses IP **publiques** sont utilisées sur Internet. Une adresse IP publique est unique dans le monde, alors que pour une adresse IP **privée** c’est dans le réseau local qu’elle est unique.~~
------------------
 
 ### Les Classes
 Au total, il existe 5 types de classes: A, B, C, D et E. Elle servent à adapter l’adressage selon la taille du réseau. Cette notion de classe est desormais obsolète du fait de la pénurie d'adresses du début des années 2010. 
@@ -22,28 +19,27 @@ Au total, il existe 5 types de classes: A, B, C, D et E. Elle servent à adapter
 Dans la pratique, au début des années 2010, de nombreux matériels et logiciels se sont basés sur ce système de classe, y compris les algorithmes de routage des protocoles dit 'classless' (cf. Cisco CCNA Exploration - Protocoles et concepts de routage). Il est donc important de les connaitres.
 
 
-| Classe | Masque réseau | Plage d'adresses réseau             | 
-| :---: |     :-------:  |         :---------------:           |
-| A     | 255.0.0.0      | 0.0.0.0      ~      126.255.255.255 |
-| B     | 255.255.0.0    | 128.0.0.0    ~      191.255.255.255 |
-| C     | 255.255.255.0  | 192.0.0.0    ~      223.255.255.255 |
-| D     | 240.0.0.0      | 224.0.0.0    ~      239.255.255.255 |
-| E     | NA             | 240.0.0.0    ~      255.255.255.255 |
+Classe| Masque réseau  | Plage d'adresses réseau             
+----- |     ---------- |        ------------------          
+A     | 255.0.0.0      | 0.0.0.0      ~      126.255.255.255
+B     | 255.255.0.0    | 128.0.0.0    ~      191.255.255.255
+C     | 255.255.255.0  | 192.0.0.0    ~      223.255.255.255
+D     | 240.0.0.0      | 224.0.0.0    ~      239.255.255.255
+E     | NA             | 240.0.0.0    ~      255.255.255.255
 
 -----------------
 
 ### Adresse IP et nom de domaine
 
-<p align="justify">Le plus souvent, pour se connecter à un serveur informatique, l'utilisateur ne donne pas l'adresse IP du serveur, mais le nom de domaine de celui ci (par exemple: www.wikipedia.org). Ce nom de domaine est ensuite résolu en adresse IP par l'ordinateur de l'utilisateur en faisant appel au système de noms de domaine (ou DNS[4]). Ce n'est qu'une fois l'adresse obtenue qu'il est possible d'initier une connexion.</p>
+Le plus souvent, pour se connecter à un serveur informatique, l'utilisateur ne donne pas l'adresse IP du serveur, mais le nom de domaine de celui ci (par exemple: www.wikipedia.org). Ce nom de domaine est ensuite résolu en adresse IP par l'ordinateur de l'utilisateur en faisant appel au système de noms de domaine (ou DNS[4]). Ce n'est qu'une fois l'adresse obtenue qu'il est possible d'initier une connexion.
 
 -------------------
 
 ### Adresses de diffusion 
 
-* L'adresse `255.255.255.255` est une adresse de diffusion (broadcast), limitée au même sous-réseau que la liaison locale utilisée, d'un hôte à tous les hôtes de ce sous-réseau ; elle sert notamment à découvrir les routeurs connectés adressés dans tout sous-réseau auquel l'hôte source est connecté.
-* La première adresse d'un sous-réseau spécifie le réseau lui-même, elle sert pour des messages non nécessairement destinés aux seuls routeur mais qui ne doivent normalement pas être reroutés vers Internet.
-* La dernière adresse est une adresse de diffusion (broadcast) pour des messages normalement destinés aux seuls les routeurs d'une liaison spécifique, permettant les échanges entre tous les hôtes de ce sous-réseau et les réseaux extérieurs (dont l'Internet global). Cette adresse n'est habituellement pas reroutée vers Internet, sauf en cas d'utilisation de protocoles particuliers.
-
+* L'adresse `255.255.255.255` est une adresse de diffusion (broadcast), limitée au même sous-réseau que la liaison locale utilisée, d'un hôte à tous les hôtes de ce sous-réseau ; elle sert notamment à découvrir les routeurs connectés adressés dans tout sous-réseau auquel l'hôte source est connecté.   
+* La première adresse d'un sous-réseau spécifie le réseau lui-même, elle sert pour des messages non nécessairement destinés aux seuls routeur mais qui ne doivent normalement pas être reroutés vers Internet.   
+* La dernière adresse est une adresse de diffusion (broadcast) pour des messages normalement destinés aux seuls les routeurs d'une liaison spécifique, permettant les échanges entre tous les hôtes de ce sous-réseau et les réseaux extérieurs (dont l'Internet global). Cette adresse n'est habituellement pas reroutée vers Internet, sauf en cas d'utilisation de protocoles particuliers.   
 
 
 
@@ -51,23 +47,18 @@ Dans la pratique, au début des années 2010, de nombreux matériels et logiciel
 ------------------
 ### IP Versions
 
-Aujourd'hui, deux versions du protocole Internet sont couramment utilisées sur Internet, l'**IPv4** pour protocole Internet version 4 et l'**IPv6** pour protocole Internet version 6. 
+Aujourd'hui, deux versions du protocole Internet sont couramment utilisées sur Internet, l'**IPv4** pour protocole Internet version 4 et l'**IPv6** pour protocole Internet version 6.   
 
-<p align="justify">L'épuisement des adresses IPv4 a conduit au développement d'une nouvelle version d'IP, l'IPv6. Le manque d'adresse IPv4 est dans un premier temps contourné grâce à l'utilisation de techniques de traduction d'adresses comme le NAT[3]. Le nombre d'adresses IPv4 publiques est officiellement arrivé à saturation le 3 février 2011. Les adresses IP sont généralement écrites et affichées dans des notations lisibles par l'homme. </p>  
+L'épuisement des adresses IPv4 a conduit au développement d'une nouvelle version d'IP, l'IPv6. Le manque d'adresse IPv4 est dans un premier temps contourné grâce à l'utilisation de techniques de traduction d'adresses comme le NAT[3]. Le nombre d'adresses IPv4 publiques est officiellement arrivé à saturation le 3 février 2011. Les adresses IP sont généralement écrites et affichées dans des notations lisibles par l'homme.   
 
 #### IPv4
-Les adresses IPv4 sont généralement représentées en notation **décimale**, composée de quatre nombres décimaux, chacun allant de 0 à 255, séparés par des points. Les adresses IPv4 sont codées sur 32 bits, ce qui limite à 4,3 x 10^+9 adresses possibles. Prenons l'adresse IPv4 suivante: `172.16.254.1`. Dans cette exemple, chaque partie séparé par un point, représente un groupe de 8 bits (un octet) de l'adresse. Dans certains cas d'écriture technique, les adresses IPv4 peuvent être présentées dans diverses représentations hexadécimales, octales ou binaires.  
+Les adresses IPv4 sont généralement représentées en notation **décimale**, composée de quatre nombres décimaux, chacun allant de 0 à 255, séparés par des points. Les adresses IPv4 sont codées sur 32 bits, ce qui limite à 4,3 x 10^+9 adresses possibles. Prenons l'adresse IPv4 suivante: `172.16.254.1`. Dans cette exemple, chaque partie séparé par un point, représente un groupe de 8 bits (un octet) de l'adresse. Dans certains cas d'écriture technique, les adresses IPv4 peuvent être présentées dans diverses représentations hexadécimales, octales ou binaires.   
 
 **Adresse IPv4 : notation décimale -> binaire**
-```
-   172  .   16   .  254   .   1
-    v        v       v        v 
-10101100.00010000.11111110.00000001
-<-------><------><--------><------>
-                   8 bits 
-    8   +    8   +    8   +   8   =  32 bits
-```
-
+decimale (1 octet)|172 | 16 | 254 | 1
+--------|----|----|-----|----
+binaire (8 bits) | 10101100 | 00010000 | 11111110 | 00000001
+On observe que la somme des 4 octets (4 * 8 = 32) que compose l'adresse IPv4 est de 32 bits. 
 
 #### IPv6
 Lors de la création de l'IPv4 à l'IPv6, la taille de l'adresse est passé de 32 à 128 bits. Permettant d'atteindre ainsi 3.4×10^+38 d'adresses  possibles, jugé suffisant pour l'avenir. Les 128 bits d'une adresse IPv6 sont représentés en 8 groupes de 16 bits chacun. Chaque groupe est écrit en quatre chiffres **hexadécimaux** et les groupes sont séparés par des deux-points ":"  
@@ -111,7 +102,7 @@ Le Domain Name System, généralement abrégé DNS, qu'on peut traduire en « sy
 ------------------
 ### Références
 Suivre les liens suivants pour approfondir les sujets abordés:  
->[En savoir plus sur l'Adresse IP](https://fr.wikipedia.org/wiki/Adresse_IP)  
->[En savoir plus sur le NAT](https://fr.wikipedia.org/wiki/Network_address_translation)  
->[En savoir plus sur la représentaion des IPv6](https://en.wikipedia.org/wiki/IPv6_address#Representation)  
->[En savoir plus sur le DNS](https://fr.wikipedia.org/wiki/Domain_Name_System)
+En savoir plus sur [l'Adresse IP](https://fr.wikipedia.org/wiki/Adresse_IP)  
+En savoir plus sur [le NAT](https://fr.wikipedia.org/wiki/Network_address_translation)  
+En savoir plus sur [la représentaion des IPv6](https://en.wikipedia.org/wiki/IPv6_address#Representation)  
+En savoir plus sur [le DNS](https://fr.wikipedia.org/wiki/Domain_Name_System)

@@ -1,3 +1,10 @@
+---
+title: "Cybersécurité - Jurdique"
+date: 2021-01-26
+draft: false
+
+---
+
 # Cybersécurité - Jurdique
 
 ## Sécurité du SI
@@ -35,27 +42,6 @@ L'article 1384 du Code Civil peut s'appliquer dans ses cas de figure et met en a
 « On est responsable non seulement du dommage que l'on cause par son propre fait, mais encore de celui qui est causé par le fait des personnes dont on doit répondre, ou des choses que l'on a sous sa garde. [...] »  
 
 Exemple d'application avec l'affaire [Lucent (ESCOTA)](https://www.legalis.net/actualite/affaire-lucent-lemployeur-responsable-des-actes-en-ligne-commis-par-des-salaries/ "Employeur responsable des actes en ligne commis par des salariés")  jugée en mars 2006 par la cour d'appel d'Aix-en-Provence.
-
-### Obligation de signaler toutes atteintes au SI
-
-## Obligation de sécurité
-
-### De l'employeur
-### Des salariés
-### RSSI, DSI & admin systeme
-
-## Protectiondes données personnelles
-
-
-## Obligation de conservation des traces
-
-## Surveillances des étudiants/salariés
-### respect vie privée etu/sal
-### responsabilité etu/sal
-### charte info
-#### role / contenu / entrée en vigueur / contraintes	
-
-
 
 ---------------
 
