@@ -1,3 +1,10 @@
+---
+title: "Cybersécurité - Jurdique"
+date: 2021-01-26
+draft: false
+
+---
+
 # Cybersécurité - Jurdique
 
 ## Sécurité du SI
@@ -36,31 +43,10 @@ L'article 1384 du Code Civil peut s'appliquer dans ses cas de figure et met en a
 
 Exemple d'application avec l'affaire [Lucent (ESCOTA)](https://www.legalis.net/actualite/affaire-lucent-lemployeur-responsable-des-actes-en-ligne-commis-par-des-salaries/ "Employeur responsable des actes en ligne commis par des salariés")  jugée en mars 2006 par la cour d'appel d'Aix-en-Provence.
 
-### Obligation de signaler toutes atteintes au SI
-
-## Obligation de sécurité
-
-### De l'employeur
-### Des salariés
-### RSSI, DSI & admin systeme
-
-## Protectiondes données personnelles
-
-
-## Obligation de conservation des traces
-
-## Surveillances des étudiants/salariés
-### respect vie privée etu/sal
-### responsabilité etu/sal
-### charte info
-#### role / contenu / entrée en vigueur / contraintes	
-
-
-
 ---------------
 
 ## source
-[Responsabilité penal & civil du gerant](https://www.wooxo.fr/Wooxo-news/Le-blog-Wooxo/La-responsabilite-civile-et-penale-du-gerant-en-matiere-de-securite-informatique)
-[sommaire-juridique dans la cyber](https://www.hs2.fr/juridique-droit-de-la-cybersecurite/)
-https://www.stormshield.com/fr/actus/vers-une-responsabilite-des-collaborateurs-entreprise-en-matiere-de-cybersecurite/
-http://www.feral-avocats.com/wp-content/uploads/2016/10/160900-RWI-SFO-Action-Canada-France-Aspects-juridiques-Cyberse%CC%81curite%CC%81.pdf
+[Responsabilité penal & civil du gerant](https://www.wooxo.fr/Wooxo-news/Le-blog-Wooxo/La-responsabilite-civile-et-penale-du-gerant-en-matiere-de-securite-informatique)   
+[sommaire-juridique dans la cyber](https://www.hs2.fr/juridique-droit-de-la-cybersecurite/)   
+https://www.stormshield.com/fr/actus/vers-une-responsabilite-des-collaborateurs-entreprise-en-matiere-de-cybersecurite/   
+http://www.feral-avocats.com/wp-content/uploads/2016/10/160900-RWI-SFO-Action-Canada-France-Aspects-juridiques-Cyberse%CC%81curite%CC%81.pdf   
