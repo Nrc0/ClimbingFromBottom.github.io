@@ -9,7 +9,7 @@ HyperText Markup Language a fait son apparition dès _1991_ lors du lancement du
 Cascading Style Sheets, aussi appelées Feuilles de style, permet de gérer l'apparence de la page web (agencement, positionnement, décoration, couleurs, taille du texte…). Ce langage est venu compléter le HTML en _1996_.
 
 **Structure HTML basique**
-```html
+``html
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +21,7 @@ Cascading Style Sheets, aussi appelées Feuilles de style, permet de gérer l'ap
     <p>Ceci est un paragraphe sur la page.</p>
 </body>
 </html>
-```
+``
 
 ### Balises & Attributs
 
