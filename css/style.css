@@ -79,6 +79,54 @@ img {
   100% {background: black}
 }
 
+/* #### Logo Transition ####*/
+#svg-transition-in {
+  z-index: 100;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  -webkit-transform-origin: 52.5% 37%;
+  
+  /*Animations*/
+  -webkit-transition: all 2s ease-in;
+
+  /*-moz-transition: 5s;
+  -o-transition: 5s;
+  transition: 5s;*/
+}
+
+#svg-transition-in.transition {
+  -webkit-transform: scale(100);
+}
+
+#svg-transition-out {
+  z-index: 10;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform-origin: 52.5% 37%;
+  -webkit-transform: scale(100);
+  
+  /*Animations*/
+  -webkit-transition: 5s ease-out;
+
+  /*-moz-transition: 5s;
+  -o-transition: 5s;
+  transition: 5s;*/
+}
+
+#svg-transition-out.transition {
+  -webkit-transform: scale(0);
+}
+/* ######################### */
+
 .btn-black {
   text-decoration: none;
   background-color: black;
@@ -291,6 +339,7 @@ border-color: transparent #000 transparent transparent;
         -webkit-transform: translateX(0);
     }
 }
+
 
 /* ################################### */
 
