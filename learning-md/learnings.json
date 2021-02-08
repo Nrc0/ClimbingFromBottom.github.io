@@ -1,4 +1,4 @@
-aspectjuridique = '[{"name": "asp_jur", "title": "Aspect Juridique", "desc": ""}, {"name" : "cnil", "title": "CNIL", "desc": ""}, {"name" : "rgpd", "title": "RGPD", "desc": ""}, {"name" : "lois-applicable", "title": "Lois Applicables", "desc": ""}, {"name" : "lois_cyber", "title": "Lois Cyber", "desc": ""}, {"name" : "phishing", "title": "Phishing", "desc": ""}]';
+aspectjuridique = '[{"name": "asp_jur", "title": "Aspect Juridique", "desc": ""}, {"name" : "cnil", "title": "CNIL", "desc": ""}, {"name" : "rgpd", "title": "RGPD", "desc": ""}, {"name" : "lois-applicable", "title": "Lois Applicables", "desc": ""}, {"name" : "lois_cyber", "title": "Lois Cyber", "desc": ""}]';
 forensic = '[{"name": "files", "title": "Les Fichiers", "desc": ""}, {"name" : "hash", "title": "Les Hashs", "desc": ""}, {"name" : "registres", "title": "Les Registres", "desc": ""}, {"name" : "linux_command_basics", "title": "Linux Command Basics", "desc": ""}]';
 network = '[{"name": "ip_address", "title": "Adresses IP", "desc": ""}, {"name" : "wireshark", "title": "Wireshark", "desc": ""}]';
-web = '[{"name": "html_php", "title": "HTML et PHP", "desc": ""}]';
+web = '[{"name": "html_php", "title": "HTML et PHP", "desc": ""}, {"name" : "phishing", "title": "Phishing", "desc": ""}]';
