@@ -10,9 +10,3 @@ function pageTransitionIn(logo, redirect) {
 		window.location.replace(redirect);
 	}, 2000);
 }
-
-function pageTransitionOut() {
-  document.getElementById("full-page").removeAttribute("hidden");
-  //var svg = document.getElementById("svg-transition-out");
-  //svg.classList.add('transition');
-}

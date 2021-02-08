@@ -16,57 +16,54 @@
 		<title>CFB - Challenges</title>
 	</head>
 
-	<body class="challenges-page" onload="pageTransitionOut()">
-    <div id="full-page" hidden>
-      <div class="menu-bar">
-        <a class="menu-links" href="index.html">~/home</a>
-        <a class="menu-links" href="#">/challenges</a>
-        <div id="cursor"></div>
-        <img id="logo" style="float:right;" src="images/logo/logo-blanc.svg" alt="Logo" width="100px" onclick="pageTransitionIn('logo-blanc.svg', 'learning.html')">
+	<body class="challenges-page">
+    <div class="menu-bar">
+      <a class="menu-links" href="index.html">~/home</a>
+      <a class="menu-links" href="#">/challenges</a>
+      <div id="cursor"></div>
+      <img id="logo" style="float:right;" src="images/logo/logo-blanc.svg" alt="Logo" width="100px" onclick="pageTransitionIn('logo-blanc.svg', 'learning.html')">
       </div>
 
       <div class="text-center">
 
-        <h1>Challenges</h1>
+      <h1>Challenges</h1>
 
-        <div class="d-lg-flex justify-content-center">
-          <div class="fsm" onclick="location.href='challs.html?cat=forensic';">
-            <div class="fsm_corner">
-              <div class="fsm_corner-triangle"></div>
-            </div>
-            <img style="float:center;" src="images/cat-imgs/forensic.png" alt="" width="100px">
-            <h2>Forensic</h2>
+      <div class="d-lg-flex justify-content-center">
+        <div class="fsm" onclick="location.href='challs.html?cat=forensic';">
+          <div class="fsm_corner">
+            <div class="fsm_corner-triangle"></div>
           </div>
-          <div class="fsm" onclick="location.href='challs.html?cat=network';">
-            <div class="fsm_corner">
-              <div class="fsm_corner-triangle"></div>
-            </div>
-            <img style="float:center;" src="images/cat-imgs/network.png" alt="" width="100px">
-            <h2>Network</h2>
-          </div>
-          <div class="fsm" onclick="location.href='challs.html?cat=web';">
-            <div class="fsm_corner">
-              <div class="fsm_corner-triangle"></div>
-            </div>
-            <img style="float:center;" src="images/cat-imgs/web.png" alt="" width="100px">
-            <h2>Web</h2>
-          </div>
-          <div class="fsm" onclick="location.href='challs.html?cat=cryptographie';">
-            <div class="fsm_corner">
-              <div class="fsm_corner-triangle"></div>
-            </div>
-            <img style="float:center;" src="images/cat-imgs/crypto.png" alt="" width="100px">
-            <h2>Crypto</h2>
-          </div>
+          <img style="float:center;" src="images/cat-imgs/forensic.png" alt="" width="100px">
+          <h2>Forensic</h2>
         </div>
-
-        <div class="footer">
-            © 2021 Copyright: using Bootstrap library
+        <div class="fsm" onclick="location.href='challs.html?cat=network';">
+          <div class="fsm_corner">
+            <div class="fsm_corner-triangle"></div>
+          </div>
+          <img style="float:center;" src="images/cat-imgs/network.png" alt="" width="100px">
+          <h2>Network</h2>
+        </div>
+        <div class="fsm" onclick="location.href='challs.html?cat=web';">
+          <div class="fsm_corner">
+            <div class="fsm_corner-triangle"></div>
+          </div>
+          <img style="float:center;" src="images/cat-imgs/web.png" alt="" width="100px">
+          <h2>Web</h2>
+        </div>
+        <div class="fsm" onclick="location.href='challs.html?cat=cryptographie';">
+          <div class="fsm_corner">
+            <div class="fsm_corner-triangle"></div>
+          </div>
+          <img style="float:center;" src="images/cat-imgs/crypto.png" alt="" width="100px">
+          <h2>Crypto</h2>
         </div>
       </div>
 
-      <!--<object id="svg-transition-out" type="image/svg+xml" data="images/logo/logo-blanc.svg"></object>-->
+      <div class="footer">
+          © 2021 Copyright: using Bootstrap library
+      </div>
     </div>
+
 
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->

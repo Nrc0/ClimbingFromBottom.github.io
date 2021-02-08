@@ -41,6 +41,10 @@ img {
   height: 130px;
 }
 
+.menu-bar img {
+  cursor: pointer;
+}
+
 .learning-page .menu-links {
   text-decoration: none;
   color: black;
@@ -84,23 +88,22 @@ img {
   z-index: 100;
   position: absolute;
   margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  
+  top: -7800px;
+  left: -9550px;
+  width: 20000px;
+
+  -webkit-transform: scale(0.0000001);
   -webkit-transform-origin: 52.5% 37%;
   
   /*Animations*/
-  -webkit-transition: all 2s ease-in;
-
+  -webkit-transition: 2s cubic-bezier(1, 0, 1, 0.5);
   /*-moz-transition: 5s;
   -o-transition: 5s;
   transition: 5s;*/
 }
 
 #svg-transition-in.transition {
-  -webkit-transform: scale(100);
+  -webkit-transform: scale(1);
 }
 
 #svg-transition-out {
