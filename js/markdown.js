@@ -41,7 +41,9 @@ const orderedListRegex = /(\n\s*([0-9]+\.)\s.*)+/g;
 const paragraphRegex = /\n+(?!<pre>)(?!<h)(?!<ul>)(?!<blockquote)(?!<hr)(?!\t)([^\n]+)\n/g;
 // Replacer functions for Markdown
 const codeBlockReplacer = function(fullMatch){
-	return '\n<pre>' + fullMatch + '</pre>';
+  let lines = '';
+  fullMatch.split('\n').forEach( line => { lines += line.substring(1) + '\n'; } );
+	return '\n<pre>' + lines + '</pre>';
 }
 const inlineCodeReplacer = function(fullMatch, tagStart, tagContents){
 	return '<code>' + tagContents + '</code>';
@@ -96,8 +98,9 @@ const replaceParagraphs = replaceRegex(paragraphRegex, paragraphReplacer);
 // Fix for tab-indexed code blocks
 const codeBlockFixRegex = /\n(<pre>)((\n|.)*)(<\/pre>)/g;
 const codeBlockFixer = function(fullMatch, tagStart, tagContents, lastMatch, tagEnd){
-	let lines = '';
-	tagContents.split('\n').forEach( line => { lines += line.substring(1) + '\n'; } );
+  let lines = '';
+  tagContents.split('\n').forEach( line => { lines += line + '\n'; } );
+	//console.log(tagStart + lines + tagEnd);
 	return tagStart + lines + tagEnd;
 }
 const fixCodeBlocks = replaceRegex(codeBlockFixRegex, codeBlockFixer);
@@ -121,7 +124,7 @@ const parseMarkdown = function(str) {
 function showMDpage(filepath){
 	$.get(filepath, function(data) {
     html = parseMarkdown(data);
-    console.log(html);
+    //console.log(html);
     $('.content').html(html);
 	});
 }
