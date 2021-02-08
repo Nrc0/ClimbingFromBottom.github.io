@@ -1,26 +1,6 @@
-function getKey(filepath) {
-  var input = document.getElementById("key-field");
-
-  var key = JSON.parse(data).key;
-
-  if(sha1(input.value) == key){
-    var modal = document.getElementById("whatafile").childNodes; // modal
-    var tmp = modal[1].childNodes; // modal-dialog
-    tmp = tmp[1].childNodes; // modal-content
-    var header = tmp[1].childNodes; // modal-header
-    var body = tmp[3].childNodes; // modal-body
-    var footer = tmp[5].childNodes; // modal-footer
-    
-    body[1].innerHTML = JSON.parse(data).text;
-    body[1].style.color = "green";
-  } else {
-    input.classList.add("invalid");
-    $('.key-field').on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e){
-          $('.key-field').delay(200).removeClass('invalid');
-    }); 
-  }
-}
-
+// #################################################
+// ############### Markdown to HTML ################
+// #################################################
 const replaceRegex = function(regex, replacement){
 	return function(str){
 		return str.replace(regex, replacement);
@@ -55,7 +35,7 @@ const linkReplacer = function(fullMatch, tagTitle, tagURL){
 	return '<a href="' + tagURL + '">' + tagTitle + '</a>';
 }
 const headingReplacer = function(fullMatch, tagStart, tagContents){
-	return '\n<h' + tagStart.trim().length + '>' + '<span>'  + tagContents + '</span>' + '</h' + tagStart.trim().length + '>';
+	return '\n<h' + tagStart.trim().length + ' id=\'' + tagContents.replace(/\s/g, '')  + '\'>' + '<span>'  + tagContents + '</span>' + '</h' + tagStart.trim().length + '>';
 }
 const boldItalicsReplacer = function(fullMatch, tagStart, tagContents){
 	return '<' + ( (tagStart.trim().length==1)?('em'):('strong') ) + '>'+ tagContents + '</' + ( (tagStart.trim().length==1)?('em'):('strong') ) + '>';
@@ -129,6 +109,36 @@ function showMDpage(filepath){
 	});
 }
 
+function createTableOfContent(){
+  var TableOfContent =
+  "<nav role='navigation' class='table-of-contents'>" +
+    "<h2>Table des matieres</h2>" +
+    "<ul>";
+
+  var elem, title, link;
+  $('.content h2, .content h3, .content h4, .content h5').each(function(){
+    elem = $(this);
+    title = elem.text();
+    link = "#" + elem.attr("id");
+
+    newLine =
+      "<li>" +
+        "<a href='" + link + "'>" +
+          title +
+        "</a>" +
+      "</li>";
+
+    TableOfContent += newLine;
+
+  });
+    
+  TableOfContent +=
+    "</ul>" +
+  "</nav>";
+
+  $('#content').prepend(TableOfContent);
+}
+
 function startMD(cat, file){
 
   //const urlParams = new URLSearchParams(window.location.search);
@@ -144,4 +154,8 @@ function startMD(cat, file){
 
   //showMDpage('https://raw.githubusercontent.com/ClimbingFromBottom/ClimbingFromBottom.github.io/main/learning-md/' + cat + '/' + file + '.md');
   showMDpage('https://raw.githubusercontent.com/ClimbingFromBottom/md-files/main/' + cat + '/' + file + '.md');
+
+  window.setTimeout(function () {
+    createTableOfContent();
+  }, 500);
 }

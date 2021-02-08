@@ -1,20 +1,17 @@
 .content {
   display: none;
-  width: 70%;
   font-size: 1.2em;
   border: solid black 5px;
   border-radius: 10px;
   margin-left: 400px;
-  margin-right: 20px;
+  margin-right: 100px;
   padding: 20px;
-	counter-reset: section-1, section-2, section-3, section-4;
 }
 
 .content h1 {
   font-family: 'Athiti';
   font-size: 2em;
   color: white;
-  text-align: center;
 	counter-reset: section-1 section-2 section-3 section-4;
 }
 
@@ -25,40 +22,32 @@
 
 .content h2 {
   font-weight: bold;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 10px;
-  border-bottom: solid gray 1px;
+  padding-left: 10px;
+  border-left: solid gray 4px;
 	counter-increment: section-1;
 	counter-reset: section-2 section-3 section-4;
 }
 
 .content h3 {
   font-weight: bold;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 10px;
-  border-bottom: solid gray 1px;
+  padding-left: 10px;
+  border-left: solid gray 4px;
 	counter-increment: section-2;
 	counter-reset: section-3 section-4;
 }
 
 .content h4 {
   font-weight: bold;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 10px;
-  border-bottom: solid gray 1px;
+  padding-left: 10px;
+  border-left: solid gray 4px;
 	counter-increment: section-3;
 	counter-reset: section-4;
 }
 
 .content h5 {
   font-weight: bold;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 10px;
-  border-bottom: solid gray 1px;
+  padding-left: 10px;
+  border-left: solid gray 4px;
 	counter-increment: section-4;
 }
 
@@ -66,6 +55,15 @@
 .content h3:before { content: counter(section-1) "." counter(section-2) " "; }
 .content h4:before { content: counter(section-1) "." counter(section-2) "." counter(section-3) " "; }
 .content h5:before { content: counter(section-1) "." counter(section-2) "." counter(section-3) "." counter(section-4) " "; }
+
+.content h2:target, .content h3:target, .content h4:target, .content h5:target {
+  animation: highlight 2s ease;
+}
+
+@keyframes highlight {
+  0% { background-color: yellow; }
+  100% { background-color: white; }
+}
 
 .content blockquote {
   background-color: #f1f1f1;
@@ -94,4 +92,34 @@
     margin-bottom: 1.6em;
     padding: 1em 1.5em;
     display: block;
+}
+
+.table-of-contents {
+  float: right;
+  width: 300px;
+  background: #eee;
+  border-radius: 5px;
+  font-size: 0.8em;
+  padding: 10px;
+  margin: 10px;
+}
+
+.table-of-contents h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.table-of-contents h2:before { content: none; }
+
+.table-of-contents ul {
+  padding-left: 10px;
+}
+
+.table-of-contents li {
+  list-style: none;
+}
+
+.table-of-contents li:before {
+    content: '#';
+    margin-right: 10px;
 }

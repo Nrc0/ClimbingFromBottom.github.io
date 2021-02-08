@@ -248,6 +248,7 @@ img {
   width: 350px;
   position: fixed;
   left: 10px;
+  overflow: hidden;
 }
 
 .fsm {
