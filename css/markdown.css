@@ -1,9 +1,11 @@
 .content {
+  display: none;
+  width: 70%;
   font-size: 1.2em;
   border: solid black 5px;
   border-radius: 10px;
-  width: 70%;
-  margin: 0 auto;
+  margin-left: 400px;
+  margin-right: 20px;
   padding: 20px;
 	counter-reset: section-1, section-2, section-3, section-4;
 }

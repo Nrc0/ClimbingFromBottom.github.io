@@ -188,12 +188,16 @@ img {
   color: black;
 }
 
+#fiches-box {
+  transition: 0.5s;
+}
+
 .box-cat {
   border: solid black 2px;
   border-radius: 10px;
-  width: 50%;
   margin: 0 auto;
   margin-bottom: 10px;
+  margin-left: 20px;
   color: black;
 }
 
@@ -207,6 +211,7 @@ img {
 }
 
 .cat-title {
+  padding-right: 10px;
   cursor: pointer;
 }
 
@@ -223,15 +228,26 @@ img {
   margin: 5px;
   margin-left: 60px;
   padding-left: 5px;
-  color: white;
+  color: white !important;
   font-size: 1.5em;
+  cursor: pointer;
 }
 
 .cat-links a:hover {
   background-color: white;
-  color: black;
+  color: black !important;
   border: solid black 2px;
   margin-bottom: 1px;
+}
+
+.full-box {
+  width: 50%;
+}
+
+.side-box {
+  width: 350px;
+  position: fixed;
+  left: 10px;
 }
 
 .fsm {

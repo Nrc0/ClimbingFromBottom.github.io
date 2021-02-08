@@ -129,12 +129,19 @@ function showMDpage(filepath){
 	});
 }
 
+function startMD(cat, file){
 
-const urlParams = new URLSearchParams(window.location.search);
-const cat = urlParams.get('cat');
-const file = urlParams.get('file');
+  //const urlParams = new URLSearchParams(window.location.search);
+  //const cat = urlParams.get('cat');
+  //const file = urlParams.get('file');
+ 
+  cat = cat.replace('_', ' ');
+  document.getElementById('title-cat').innerHTML = (cat.charAt(0).toUpperCase() + cat.slice(1));
 
-document.getElementById('title-cat').innerHTML = (cat.charAt(0).toUpperCase() + cat.slice(1))
+  document.getElementById('fiches-box').classList.remove('full-box');
+  document.getElementById('fiches-box').classList.add('side-box');
+  document.getElementById('content').style.display = "block";
 
-//showMDpage('https://raw.githubusercontent.com/ClimbingFromBottom/ClimbingFromBottom.github.io/main/learning-md/' + cat + '/' + file + '.md');
-showMDpage('https://raw.githubusercontent.com/ClimbingFromBottom/md-files/main/' + cat + '/' + file + '.md');
+  //showMDpage('https://raw.githubusercontent.com/ClimbingFromBottom/ClimbingFromBottom.github.io/main/learning-md/' + cat + '/' + file + '.md');
+  showMDpage('https://raw.githubusercontent.com/ClimbingFromBottom/md-files/main/' + cat + '/' + file + '.md');
+}

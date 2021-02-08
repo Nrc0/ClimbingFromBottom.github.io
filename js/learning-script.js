@@ -15,7 +15,8 @@ function getLearningList(id_clicked) {
     for(i=0; i < list.length; i++) {
       var linkBtn = document.createElement('a');
       linkBtn.innerHTML = list[i].title;
-      linkBtn.setAttribute('href', 'learn-page.html?cat=' + id_clicked + '&file=' + list[i].name)
+      //linkBtn.setAttribute('href', 'learn-page.html?cat=' + id_clicked + '&file=' + list[i].name)
+      linkBtn.setAttribute('onclick', "startMD('" + id_clicked + "','" + list[i].name + "');")
       $clickedBtn.next().append(linkBtn);
     }
 
