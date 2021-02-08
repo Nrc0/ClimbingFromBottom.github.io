@@ -1,10 +1,11 @@
 .content {
-  font-size: 1.5em;
+  font-size: 1.2em;
   border: solid black 5px;
   border-radius: 10px;
   width: 70%;
   margin: 0 auto;
   padding: 20px;
+	counter-reset: section-1, section-2, section-3, section-4;
 }
 
 .content h1 {
@@ -12,6 +13,7 @@
   font-size: 2em;
   color: white;
   text-align: center;
+	counter-reset: section-1 section-2 section-3 section-4;
 }
 
 .content h1 span {
@@ -19,8 +21,75 @@
   display: inline-block;
 }
 
+.content h2 {
+  font-weight: bold;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  border-bottom: solid gray 1px;
+	counter-increment: section-1;
+	counter-reset: section-2 section-3 section-4;
+}
+
+.content h3 {
+  font-weight: bold;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  border-bottom: solid gray 1px;
+	counter-increment: section-2;
+	counter-reset: section-3 section-4;
+}
+
+.content h4 {
+  font-weight: bold;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  border-bottom: solid gray 1px;
+	counter-increment: section-3;
+	counter-reset: section-4;
+}
+
+.content h5 {
+  font-weight: bold;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  border-bottom: solid gray 1px;
+	counter-increment: section-4;
+}
+
+.content h2:before { content: counter(section-1) ". "; }
+.content h3:before { content: counter(section-1) "." counter(section-2) " "; }
+.content h4:before { content: counter(section-1) "." counter(section-2) "." counter(section-3) " "; }
+.content h5:before { content: counter(section-1) "." counter(section-2) "." counter(section-3) "." counter(section-4) " "; }
+
 .content blockquote {
   background-color: #f1f1f1;
   border-left: 6px solid #ccc;
   padding: 10px;
+}
+
+.content code {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #666;
+    font-family: monospace;
+    font-size: 15px;
+    padding: 2px;
+}
+
+.content pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    border-radius: 5px;
+    color: #666;
+    font-family: monospace;
+    font-size: 15px;
+    margin-bottom: 1.6em;
+    padding: 1em 1.5em;
+    display: block;
 }

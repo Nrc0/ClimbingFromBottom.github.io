@@ -26,29 +26,6 @@ h1 {
   margin-bottom: 50px;
 }
 
-code {
-    background: #f4f4f4;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    color: #666;
-    font-family: monospace;
-    font-size: 15px;
-    padding: 2px;
-}
-
-pre {
-    background: #f4f4f4;
-    border: 1px solid #ddd;
-    border-left: 3px solid #f36d33;
-    border-radius: 5px;
-    color: #666;
-    font-family: monospace;
-    font-size: 15px;
-    margin-bottom: 1.6em;
-    padding: 1em 1.5em;
-    display: block;
-}
-
 img {
   margin: 5px;
 
