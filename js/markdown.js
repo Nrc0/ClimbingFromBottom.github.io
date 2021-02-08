@@ -135,8 +135,8 @@ function startMD(cat, file){
   //const cat = urlParams.get('cat');
   //const file = urlParams.get('file');
  
-  cat = cat.replace('_', ' ');
-  document.getElementById('title-cat').innerHTML = (cat.charAt(0).toUpperCase() + cat.slice(1));
+  cat_title = cat.replace('_', ' ');
+  document.getElementById('title-cat').innerHTML = (cat_title.charAt(0).toUpperCase() + cat_title.slice(1));
 
   document.getElementById('fiches-box').classList.remove('full-box');
   document.getElementById('fiches-box').classList.add('side-box');
