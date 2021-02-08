@@ -1,5 +1,30 @@
 @media screen and (max-width: 1000px)
 {
+  #box {
+    display: block !important;
+  }
+
+  #fiches-box {
+    width: 50%;
+    position: inherit;
+    margin: 0 auto;
+  }
+
+  .table-of-contents {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  #content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #content h1 {
+    text-align: center;
+  }
+
   .fsm {
     margin: 0 auto;
   }
