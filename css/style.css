@@ -337,10 +337,7 @@ border-color: transparent #000 transparent transparent;
     /* also need animation and -moz-animation */
     -webkit-animation: shake .5s linear;
 }
-.key-field.second-invalid {
-    /* also need animation and -moz-animation */
-    -webkit-animation: shake .5s linear;
-}
+
 /* also need keyframes and -moz-keyframes */
 @-webkit-keyframes shake {
     8%, 41% {
