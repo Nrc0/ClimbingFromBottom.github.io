@@ -52,8 +52,8 @@
             <input type="text" name="firstname" placeholder="First name" class="namebox namebox1 signuptextbox" required>
             <input type="text" name="surname" placeholder="Surname" class="namebox namebox2 signuptextbox" required>
           </div>
-          <input class="mobilepw signuptextbox" type="text" name="mobile/email" placeholder="Mobile number or email address" required><br>
-          <input class="mobilepw signuptextbox" type="password" placeholder="New password" required>
+          <input id="userCreation" class="mobilepw signuptextbox" type="text" name="mobile/email" placeholder="Mobile number or email address" required><br>
+          <input id="passCreation" class="mobilepw signuptextbox" type="password" placeholder="New password" required>
           <br>
           <p class="createp" id="birthday">Birthday</p>
           <div class="dobdiv">
@@ -112,7 +112,7 @@
             </p>
           </div>
           <div class="clearfix">
-            <button type="button" id="signupbutton">Sign Up</button>
+            <button type="button" id="signupbutton" onclick="inscription()">Sign Up</button>
           </div>
           <div id="createpage">
             <a href="#">Create a Page</a> for a celebrity, band or business.
