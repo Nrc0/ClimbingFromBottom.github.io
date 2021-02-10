@@ -1,3 +1,8 @@
+function backToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
 // #################################################
 // ############### Markdown to HTML ################
 // #################################################
@@ -154,6 +159,8 @@ function startMD(cat, file){
 
   //showMDpage('https://raw.githubusercontent.com/ClimbingFromBottom/ClimbingFromBottom.github.io/main/learning-md/' + cat + '/' + file + '.md');
   showMDpage('https://raw.githubusercontent.com/ClimbingFromBottom/md-files/main/' + cat + '/' + file + '.md');
+
+  backToTop();
 
   window.setTimeout(function () {
     createTableOfContent();

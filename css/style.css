@@ -245,10 +245,14 @@ img {
 }
 
 .side-box {
+  position: absolute;
   width: 350px;
-  position: fixed;
   left: 10px;
-  overflow: hidden;
+}
+
+.side-box-fixed {
+  position: fixed;
+  top: 40px;
 }
 
 .fsm {

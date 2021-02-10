@@ -24,3 +24,18 @@ function getLearningList(id_clicked) {
 
   }
 }
+
+$(document).ready(function() {
+  $(window).scroll(function () {
+
+    //console.log($(window).scrollTop());
+
+    if ($(window).scrollTop() > 212) {
+      $('#fiches-box').addClass('side-box-fixed');
+    }
+
+    if ($(window).scrollTop() < 213) {
+      $('#fiches-box').removeClass('side-box-fixed');
+    }
+  });
+});
