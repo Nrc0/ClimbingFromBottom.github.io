@@ -9,7 +9,7 @@ draft: false
 
 ## Sécurité du SI
 ### Risques engageant la responsabilité du gérant du SI
-#### Responsabilité pénale
+#### Responsabilité pénale - Français
 Il y a obligation, de la part du gérant, de mettre en œuvre des mesures techniques et d’organisation pour protéger les données personnelles qui sont collectées dans le cadre de son activité. Contre potentiellement l'altération, leur destruction, la diffusion ou le non-acces desdites données.  
 
 * Article 34 – Loi informatique et Libertés Modifié par Loi n°2004-801 du 06 août 2004
@@ -23,11 +23,11 @@ Le fait de ne pas respecter ces obligations de sécurité est sanctionnée péna
 
 #### Responsabilité Civile
 Tout entreprise qui n'aura pas prise de mesures de sécurité afin de protéger les serveurs de son entreprise sera responsable des conséquences.  
-D'après **l'Article 1384 du Code Civil** prévoit, que la responsabilité civile du dirigeant est engagée si à cause d'une faute caractérisée de sa part - telle l’absence de sauvegarde –, l’entreprise subit une perte de données qui lui soit très dommageable.  
+**L'Article 1384 du Code Civil** dispose, que la responsabilité civile du dirigeant est engagée si à cause d'une faute caractérisée de sa part - telle l’absence de sauvegarde –, l’entreprise subit une perte de données qui lui soit dommageable.  
 
 La responsabilité civile est également engagée s'il est avéré qu'il n'existe aucunes mesure d’organisation ou de protection du système d’information de l’entreprise.
 
-Ne pas respecter ses obligations de sécurité des données vous amener à devoir payer des amendes importantes. Le 5 novemebre 2015, [Optical Center](https://www.acuite.fr/actualite/profession/82668/optical-center-condamne-50-000-euros-damende-par-la-cnil "Optical Center condamné à 50 000 euros d’amende par la Cnil") à ainsi été condamné à ce titre par la CNIL à payer une amende 50 000€.
+Ne pas respecter ses obligations de sécurité des données peu vous amener à devoir payer des amendes importantes. Le 5 novemebre 2015, [Optical Center](https://www.acuite.fr/actualite/profession/82668/optical-center-condamne-50-000-euros-damende-par-la-cnil "Optical Center condamné à 50 000 euros d’amende par la Cnil") à ainsi été condamné à ce titre par la CNIL à payer une amende de 50 000€.
 
 
 #### Responsabilité sécurisation du SI  
