@@ -111,6 +111,7 @@
 .content table {
   border-collapse: collapse;
   border-radius: 10px;
+  margin: 0 auto;
 }
 
 .content td, .content th { 
