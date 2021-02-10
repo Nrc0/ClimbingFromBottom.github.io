@@ -66,10 +66,25 @@ const orderedListReplacer = function(fullMatch){
 	return '\n<ol>' + items + '</ol>';
 }
 const tableRegexReplacer = function(fullMatch, tagTitle, tagSeparation, tagContents){
-  console.log(fullMatch);
-  console.log(tagTitle);
-  console.log(tagSeparation);
-  console.log(tagContents);
+  var regExp = /\|(.*)\|/g;
+  let titles = regExp.exec(tagTitle)[1].split('|');
+  regExp.lastIndex = 0;
+  //// Table Title ////
+  var res = "<table><tr>";
+  titles.forEach(item => {res += "<th>" + item.trim() + "</th>"});
+  res += "</tr>";
+
+  //// Table Content ////
+  let contents = tagContents.trim().split('\n');
+  contents.forEach(function(item){
+    res += "<tr>";
+    var lines = regExp.exec(item)[1].split('|');
+    regExp.lastIndex = 0;
+    lines.forEach(row => {res += "<td>" + row.trim() + "</td>"});
+    res += "</tr>";
+  });
+  res += "</table>";
+  return res;
 }
 const paragraphReplacer = function(fullMatch, tagContents){
 	return '<p>' + tagContents + '</p>';
