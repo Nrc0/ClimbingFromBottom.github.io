@@ -65,6 +65,20 @@
   100% { background-color: white; }
 }
 
+.content img {
+  max-width: 70%;
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+  border: solid black 2px;
+  border-radius: 5px;
+}
+
+.content img:active {
+   transform: scale(2);
+   transition: 1s;
+}
+
 .content blockquote {
   background-color: #f1f1f1;
   border-left: 6px solid #ccc;
