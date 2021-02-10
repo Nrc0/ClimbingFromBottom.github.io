@@ -167,12 +167,13 @@ function createTableOfContent(){
   $('#content').prepend(TableOfContent);
 }
 
-function startMD(cat, file){
+//function startMD(cat, file){
 
-  //const urlParams = new URLSearchParams(window.location.search);
-  //const cat = urlParams.get('cat');
-  //const file = urlParams.get('file');
- 
+const urlParams = new URLSearchParams(window.location.search);
+const cat = urlParams.get('cat');
+const file = urlParams.get('file');
+
+if(cat != null && file != null) {
   cat_title = cat.replace('_', ' ');
   document.getElementById('title-cat').innerHTML = (cat_title.charAt(0).toUpperCase() + cat_title.slice(1));
 
@@ -186,6 +187,7 @@ function startMD(cat, file){
   backToTop();
 
   window.setTimeout(function () {
-    createTableOfContent();
+  createTableOfContent();
   }, 500);
 }
+//}
