@@ -23,6 +23,7 @@ const blockquoteRegex = /\n(&gt;|\>)(.*)/g;
 const horizontalRuleRegex = /\n((\-{3,})|(={3,}))/g;
 const unorderedListRegex = /(\n\s*(\-|\+)\s.*)+/g;
 const orderedListRegex = /(\n\s*([0-9]+\.)\s.*)+/g;
+const tableRegex = /(\|[^\n]+\|\r?\n)((?:\|:?[-]+:?)+\|)(\n(?:\|[^\n]+\|\r?\n?)*)?/g;
 const paragraphRegex = /\n+(?!<pre>)(?!<h)(?!<ul>)(?!<blockquote)(?!<hr)(?!\t)([^\n]+)\n/g;
 // Replacer functions for Markdown
 const codeBlockReplacer = function(fullMatch){
@@ -64,6 +65,12 @@ const orderedListReplacer = function(fullMatch){
 	fullMatch.trim().split('\n').forEach( item => { items += '<li>' + item.substring(item.indexOf('.')+2) + '</li>'; } );
 	return '\n<ol>' + items + '</ol>';
 }
+const tableRegexReplacer = function(fullMatch, tagTitle, tagSeparation, tagContents){
+  console.log(fullMatch);
+  console.log(tagTitle);
+  console.log(tagSeparation);
+  console.log(tagContents);
+}
 const paragraphReplacer = function(fullMatch, tagContents){
 	return '<p>' + tagContents + '</p>';
 }
@@ -79,6 +86,7 @@ const replaceBlockquotes = replaceRegex(blockquoteRegex, blockquoteReplacer);
 const replaceHorizontalRules = replaceRegex(horizontalRuleRegex, horizontalRuleReplacer);
 const replaceUnorderedLists = replaceRegex(unorderedListRegex, unorderedListReplacer);
 const replaceOrderedLists = replaceRegex(orderedListRegex, orderedListReplacer);
+const replaceTable = replaceRegex(tableRegex, tableRegexReplacer);
 const replaceParagraphs = replaceRegex(paragraphRegex, paragraphReplacer);
 // Fix for tab-indexed code blocks
 const codeBlockFixRegex = /\n(<pre>)((\n|.)*)(<\/pre>)/g;
@@ -92,13 +100,13 @@ const fixCodeBlocks = replaceRegex(codeBlockFixRegex, codeBlockFixer);
 // Replacement rule order function for Markdown
 // Do not use as-is, prefer parseMarkdown as seen below
 const replaceMarkdown = function(str) {
-  return replaceParagraphs(replaceOrderedLists(replaceUnorderedLists(
+  return replaceParagraphs(replaceTable(replaceOrderedLists(replaceUnorderedLists(
 		replaceHorizontalRules(replaceBlockquotes(replaceceStrikethrough(
 			replaceBoldItalics(replaceHeadings(replaceLinks(replaceImages(
 				replaceInlineCodes(replaceCodeBlocks(str))
       ))))
     )))
-	)));
+	))));
 }
 // Parser for Markdown (fixes code, adds empty lines around for parsing)
 // Usage: parseMarkdown(strVar)
