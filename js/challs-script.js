@@ -7,7 +7,7 @@ function checkKey(cat, chall) {
   $.get(filepath, function(json) {
 	  var key = JSON.parse(eval(json)).key;
     if(sha1(input.value) == key){
-      var modal = document.getElementById("whatafile").childNodes; // modal
+      var modal = document.getElementById(chall).childNodes; // modal
       var tmp = modal[1].childNodes; // modal-dialog
       tmp = tmp[1].childNodes; // modal-content
       var header = tmp[1].childNodes; // modal-header
