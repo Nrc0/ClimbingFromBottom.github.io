@@ -5,8 +5,10 @@ function backToTop() {
 
 function imageZoom(img) {
   if(img.classList.contains('zoom')){
+    $('.zoom').off('mousemove');
     img.classList.remove('zoom');
   } else {
+    $('.zoom').off('mousemove');
     $('.zoom').removeClass('zoom');
     img.classList.add('zoom');
 
