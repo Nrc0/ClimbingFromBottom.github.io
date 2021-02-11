@@ -108,10 +108,6 @@
     padding: 1em 1.5em;
 }
 
-.content ol li {
-  list-style: none;
-}
-
 .content table {
   border-collapse: collapse;
   border-radius: 10px;

@@ -93,8 +93,8 @@ const unorderedListReplacer = function(fullMatch){
 }
 const orderedListReplacer = function(fullMatch){
 	let items = '';
-	//fullMatch.trim().split('\n').forEach( item => { items += '<li>' + item.substring(item.indexOf('.')+2) + '</li>'; } );
-	fullMatch.trim().split('\n').forEach( item => { items += '<li>' + item + '</li>'; } );
+	fullMatch.trim().split('\n').forEach( item => { items += '<li>' + item.substring(item.indexOf('.')+2) + '</li>'; } );
+	//fullMatch.trim().split('\n').forEach( item => { items += '<li>' + item + '</li>'; } );
   return '\n<ol>' + items + '</ol>';
 }
 const tableRegexReplacer = function(fullMatch, tagTitle, tagSeparation, tagContents){
