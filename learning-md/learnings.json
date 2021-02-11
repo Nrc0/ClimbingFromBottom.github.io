@@ -2,3 +2,4 @@ aspect_juridique = '[{"name": "asp_jur", "title": "Aspect Juridique", "desc": ""
 forensic = '[{"name": "files", "title": "Les Fichiers", "desc": ""}, {"name" : "hash", "title": "Les Hashs", "desc": ""}, {"name" : "registres", "title": "Les Registres", "desc": ""}, {"name" : "linux_command_basics", "title": "Linux Command Basics", "desc": ""}, {"name" : "cryptographie", "title": "Cryptographie", "desc": ""}]';
 network = '[{"name": "ip_address", "title": "Adresses IP", "desc": ""}, {"name" : "wireshark", "title": "Wireshark", "desc": ""}]';
 web = '[{"name": "html_php", "title": "HTML et PHP", "desc": ""}, {"name" : "phishing", "title": "Phishing", "desc": ""}]';
+tests = '[{"name": "test", "titre": "Test", "desc": ""}]';
