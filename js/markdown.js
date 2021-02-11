@@ -3,6 +3,35 @@ function backToTop() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+function imageZoom(img) {
+  if(img.classList.contains('zoom')){
+    img.classList.remove('zoom');
+  } else {
+    $('.zoom').removeClass('zoom');
+    img.classList.add('zoom');
+
+    $('.zoom').on('mousemove', function(event) {
+      // This gives you the position of the image on the page
+      var bbox = event.target.getBoundingClientRect();
+
+      // Then we measure how far into the image the mouse is in both x and y directions
+      var mouseX = event.clientX - bbox.left;
+      var mouseY = event.clientY - bbox.top;
+
+      // Then work out how far through the image as a percentage the mouse is
+      var xPercent = (mouseX / bbox.width) * 100;
+      var yPercent = (mouseY / bbox.height) * 100;
+
+      // Then we change the `transform-origin` css property on the image to center the zoom effect on the mouse position
+      //event.target.style.transformOrigin = xPercent + '% ' + yPercent + '%';
+      // It's a bit clearer in jQuery:
+      $(this).css('transform-origin', (xPercent+'% ' + yPercent+ '%') );
+      // We add the '%' units to make sure the string looks exactly like the css declaration it becomes.
+
+    }); 
+  }
+}
+
 // #################################################
 // ############### Markdown to HTML ################
 // #################################################
@@ -35,7 +64,7 @@ const inlineCodeReplacer = function(fullMatch, tagStart, tagContents){
 	return '<code>' + tagContents + '</code>';
 }
 const imageReplacer = function(fullMatch, tagTitle, tagURL){
-	return '<img src="' + tagURL + '" alt="' + tagTitle + '" />';
+	return '<img src="' + tagURL + '" alt="' + tagTitle + '" onclick="imageZoom(this);"/>';
 }
 const linkReplacer = function(fullMatch, tagTitle, tagURL){
 	return '<a href="' + tagURL + '">' + tagTitle + '</a>';
