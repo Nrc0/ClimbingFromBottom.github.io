@@ -53,7 +53,7 @@ const strikethroughRegex = /(\~\~)(.*?)\1/g;
 const blockquoteRegex = /\n(&gt;|\>)(.*)/g;
 const horizontalRuleRegex = /\n((\-{3,})|(={3,}))/g;
 const unorderedListRegex = /(\n\s*(\-|\+)\s.*)+/g;
-const orderedListRegex = /(\n\s*([0-9]+\.)\s.*)+/g;
+const orderedListRegex = /(\n\s*([0-9]+[.]).*)+/g;
 const tableRegex = /(\|[^\n]+\|\r?\n)((?:\|:?[-]+:?)+\|)(\n(?:\|[^\n]+\|\r?\n?)*)?/g;
 const paragraphRegex = /\n+(?!<pre>)(?!<h)(?!<ul>)(?!<blockquote)(?!<hr)(?!\t)([^\n]+)\n/g;
 // Replacer functions for Markdown
@@ -93,15 +93,16 @@ const unorderedListReplacer = function(fullMatch){
 }
 const orderedListReplacer = function(fullMatch){
 	let items = '';
-	fullMatch.trim().split('\n').forEach( item => { items += '<li>' + item.substring(item.indexOf('.')+2) + '</li>'; } );
-	return '\n<ol>' + items + '</ol>';
+	//fullMatch.trim().split('\n').forEach( item => { items += '<li>' + item.substring(item.indexOf('.')+2) + '</li>'; } );
+	fullMatch.trim().split('\n').forEach( item => { items += '<li>' + item + '</li>'; } );
+  return '\n<ol>' + items + '</ol>';
 }
 const tableRegexReplacer = function(fullMatch, tagTitle, tagSeparation, tagContents){
   var regExp = /\|(.*)\|/g;
   let titles = regExp.exec(tagTitle)[1].split('|');
   regExp.lastIndex = 0;
   //// Table Title ////
-  var res = "<table><tr>";
+  var res = "\n<table><tr>";
   titles.forEach(item => {res += "<th>" + item.trim() + "</th>"});
   res += "</tr>";
 
@@ -146,7 +147,7 @@ const fixCodeBlocks = replaceRegex(codeBlockFixRegex, codeBlockFixer);
 // Replacement rule order function for Markdown
 // Do not use as-is, prefer parseMarkdown as seen below
 const replaceMarkdown = function(str) {
-  return replaceParagraphs(replaceTable(replaceOrderedLists(replaceUnorderedLists(
+  return replaceParagraphs(replaceOrderedLists(replaceUnorderedLists(replaceTable(
 		replaceHorizontalRules(replaceBlockquotes(replaceceStrikethrough(
 			replaceBoldItalics(replaceHeadings(replaceLinks(replaceImages(
 				replaceInlineCodes(replaceCodeBlocks(str))

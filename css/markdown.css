@@ -106,7 +106,10 @@
     font-size: 15px;
     margin-bottom: 1.6em;
     padding: 1em 1.5em;
-    display: block;
+}
+
+.content ol li {
+  list-style: none;
 }
 
 .content table {
